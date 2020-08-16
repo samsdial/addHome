@@ -1,0 +1,21 @@
+.bgi
+	&:before
+		content: ""
+		position: absolute
+		display: inline-block
+		background-position: center center
+		background-size: contain
+		background-repeat: no-repeat
+
+.bgc
+	&--primary
+		background: $Primary
+	&--primarylight
+		background: $PrimaryLight
+	&_solid
+		&--yellow
+			background: yellow
+	&_grad
+		&--primary
+			background: $Primary;
+			background: linear-gradient(34deg, $Primary 0%, $PrimaryLight 100%);

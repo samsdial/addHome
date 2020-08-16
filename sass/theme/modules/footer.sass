@@ -1,0 +1,34 @@
+footer
+	background-color: $SecondBold
+	a
+		color: $white
+		text-decoration: underline
+		+press
+			color: $white
+			text-decoration: none
+	&.border_top
+		border-top: 2px solid $gray
+	.box
+		.title
+			h2
+				color: $white
+				text-transform: uppercase
+		a.link
+			font-size: $text-small
+		.list
+			a.link
+				text-decoration: none
+		.list
+			.list-instagram
+				li
+					margin: 0 17px
+					&:first-child
+						margin-left: 0
+					&:last-child
+						margin-right: 0
+				span.image
+					width: 60px
+					height: 60px
+					border-radius: 100%
+					display: block
+					overflow: hidden

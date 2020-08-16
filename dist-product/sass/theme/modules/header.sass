@@ -1,0 +1,31 @@
+.box_navbar
+	background-color: transparent
+.navbar-site
+	// box-shadow: $shadow
+
+.navbar
+	&-brand
+		padding-top: 40px
+		padding-bottom: 40px
+	&-nav
+		.nav-item
+			margin: 0 17px
+			vertical-align: middle
+			&:first-child
+				margin-left: 0
+			&:last-child
+				margin-right: 0
+			&:last-child
+				a.nav-link
+					color: $white
+					background-color: $Primary
+					padding: $spacers4
+					border-radius: 50px
+					+press
+						color: $white
+		a.nav-link
+			color: $Second
+			padding: $spacers4
+			text-transform: uppercase
+			+press
+				color: $Primary

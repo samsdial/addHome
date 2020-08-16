@@ -1,0 +1,79 @@
+.box
+	&-banner
+		&-info
+			padding-left: 300px
+			padding-right: 100px
+			.title
+				h2,
+				h1
+					font-size: 75px
+			.paragraf
+				p
+					font-size: $text-bigger
+		figure
+			display: inline-block
+			background: $white
+			padding: $spacers5
+
+
+.box
+	&-result
+		&-intro
+			h2
+				font-size: $h1-font-size
+		.title
+			h2
+				font-size: $h4-font-size
+//BOX OFFERT
+.box
+	&-offer
+		display: block
+		&.box-offer
+			&-max,
+			&-min
+				width: 100%
+				display: block
+				background-position: center center
+				background-repeat: no-repeat
+				background-size: cover
+			&-max
+				height: 900px
+				+MQMAX(SL)
+					height: 450px
+				.title
+					h2
+						text-shadow: $txt-shadow
+			&-min
+				height: 450px
+		.title
+			h2
+				font-size: $h2-font-size
+//BOX SLIDER
+.box
+	&-benefit
+		&-intro
+			h2
+				font-size: $h1-font-size
+		.card
+			border: none
+			border-radius: $card-site-border-radius
+			margin: 0 $spacers3
+			.card-img-top
+				border-top-left-radius: $card-site-border-radius
+				border-top-right-radius: $card-site-border-radius
+
+//BOX SLIDER
+.box
+	&-blog
+		&-info
+			padding: $spacers5
+		.date
+			.day
+				font-size: $h1-font-size
+				color: $Primary
+			.info
+				font-size: $h4-font-size
+				color: $gainsboro
+			.title
+				color: $black
+				font-size: $h2-font-size

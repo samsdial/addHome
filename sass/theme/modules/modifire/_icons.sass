@@ -1,0 +1,44 @@
+.logo:before,
+.icon:before
+	content: ""
+	display: inline-block
+	background-repeat: no-repeat
+	-webkit-background-size: contain
+	background-size: contain
+	background-position: center center
+	vertical-align: middle
+.logo
+	position: relative
+	vertical-align: middle
+	display: inline-block
+	&_site:before
+		background-image: url('#{$imagePath}logo-add.png')
+		width: 150px
+		height: 49px
+.icon
+	position: relative
+	vertical-align: middle
+	display: inline-block
+	&-insta:before
+		background-image: url('#{$imagePath}instagram.png')
+		width: 35px
+		height: 35px
+	&-face:before
+		background-image: url('#{$imagePath}facebook.png')
+		width: 35px
+		height: 35px
+
+	&-phone:before
+		background-image: url('#{$imagePath}phone.png')
+		width: 13px
+		height: 13px
+
+	&-email:before
+		background-image: url('#{$imagePath}mail.png')
+		width: 13px
+		height: 13px
+
+	&-location:before
+		background-image: url('#{$imagePath}location.png')
+		width: 13px
+		height: 13px
