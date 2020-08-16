@@ -41,6 +41,8 @@
 			h2,
 			h1
 				font-size: $h1-font-size
+				+MQMAX(S)
+					font-size: rem-calc(32px)
 		// .paragraf
 		// 	p
 		// 		font-size: $h6-font-size
@@ -73,6 +75,8 @@
 .box
 	&-result
 		margin: 0 $spacers4
+		+MQMAX(SL)
+			margin: 0 rem-calc(52px)
 		&-intro
 			h2
 				font-size: $h1-font-size
@@ -202,6 +206,7 @@
 		&-prefotter
 			h2
 				font-size: $h4-font-size
+
 	&-about
 		.subtitle
 			margin-bottom: rem-calc(35px)

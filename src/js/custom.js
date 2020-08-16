@@ -9,7 +9,8 @@ $(document).ready(function () {
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2,
-				dots: true
+				dots: true,
+				arrows: false,
 			}
 		},
 		{
@@ -17,7 +18,9 @@ $(document).ready(function () {
 			settings: {
 				slidesToShow: 1,
 				slidesToScroll: 1,
-				dots: true
+				dots: true,
+				arrows: false,
+
 			}
 		}
 		]

@@ -185,7 +185,7 @@ if ( is_front_page() ) {
 				</div>
 				<div class="action">
 					<a href="" class="link">
-						Agenda tu visita >
+						Agenda tu visita <i class="fa fa-angle-right"></i>
 					</a>
 				</div>
 			</div>

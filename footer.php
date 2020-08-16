@@ -27,19 +27,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<li>
 								<a href="" class="d-block link-footer mb-1">
 									<span class="icon icon-location"></span>
-									<span class="align-bottom ml-2"> Lorem, ipsum dolor.</span>
+									<span class="align-bottom ml-2"> Bogota, Col</span>
 								</a>
 							</li>
 							<li>
 								<a href="" class="d-block link-footer mb-1">
 									<span class="icon icon-email"></span>
-									<span class="align-bottom ml-2"> Lorem, ipsum dolor.</span>
+									<span class="align-bottom ml-2"> contacto@casaadd.com</span>
 								</a>
 							</li>
 							<li>
 								<a href="" class="d-block link-footer mb-1">
 									<span class="icon icon-phone"></span>
-									<span class="align-bottom ml-2"> 777 888 00</span>
+									<span class="align-bottom ml-2"> 350 5232208</span>
 								</a>
 							</li>
 						</ul>

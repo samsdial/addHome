@@ -135,7 +135,7 @@ if ( is_front_page() ) {
 				</div>
 				<div class="action">
 					<a href="" class="link">
-						Trabaja con nosotros >
+						Trabaja con nosotros <i class="fa fa-angle-right"></i>
 					</a>
 				</div>
 			</div>
