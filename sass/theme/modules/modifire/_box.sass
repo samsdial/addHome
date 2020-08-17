@@ -43,9 +43,6 @@
 				font-size: $h1-font-size
 				+MQMAX(S)
 					font-size: rem-calc(32px)
-		// .paragraf
-		// 	p
-		// 		font-size: $h6-font-size
 	figure
 		display: inline-block
 		background: $white
@@ -53,6 +50,7 @@
 			padding: $spacers5
 .box
 	&-banner
+		min-height: 800px
 		&-info
 			padding: 0 $spacers5
 			+MQ(L)
@@ -65,6 +63,8 @@
 			.paragraf
 				p
 					font-size: $text-bigger
+					+MQMAX(SL)
+						font-size: $font-size-base
 		figure
 			display: inline-block
 			background: $white
@@ -156,6 +156,11 @@
 //BOX SLIDER
 .box
 	&-blog
+		&-card
+			> div
+				width: 50%
+				+MQMAX(SL)
+					width: 100%
 		&-info
 			padding: $spacers5 0
 			+MQ(SL)
@@ -215,8 +220,6 @@
 				font-size: $h3-font-size
 				line-height: 1.5
 		.paragraf
-			+MQ(SL)
-				padding-right: rem-calc(140px)
 			p
 				font-weight: normal
 				text-align: justify
@@ -225,7 +228,9 @@
 	position: relative
 	+MQ(SL)
 		overflow: hidden
-		height: 420px
+	.container .row
+		+MQ(SL)
+			min-height: 420px
 	.paragraf
 		p
 			text-align: justify
@@ -237,7 +242,7 @@
 			overflow: hidden
 		+MQ(SL)
 			position: absolute
-			right: -30%
+			right: -45%
 			top: 0
 		+MQ(L)
 			right: -15%
@@ -287,7 +292,8 @@
 			padding: 0 rem-calc(70px)
 			width: 85%
 		+MQMAX(M)
-			width: 85%
+			padding: 0 rem-calc(38px)
+			width: 100%
 		.paragraf
 			p
 				font-size: $h6-font-size
@@ -303,8 +309,12 @@
 .box-begin
 	vertical-align: top
 	.card-body
+
+
 		+MQMAX(SL)
 			width: 55%
+		@media (max-width:  $phablet)
+			width: 100%
 		.title
 			h2
 				font-size: $h5-font-size
@@ -315,3 +325,18 @@
 		+MQMAX(SL)
 			vertical-align: top
 			display: inline-block
+		@media (max-width:  $phablet)
+			display: block
+
+.box-copy
+	ul
+		li
+			background: transparent
+			border: none
+			padding: 0
+			&:first-child
+				padding-right: $spacer
+				border-right: 1px solid $white
+			&:last-child
+				padding-left: $spacer
+

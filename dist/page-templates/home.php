@@ -75,55 +75,55 @@ if ( is_front_page() ) {
 			<div class="col-12 mb-5">
 				<ul class="box-result-slider">
 					<li>
-						<div class="box-result">
-							<figure class="mb-5"><img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/vocation.png" alt=""></figure>
+						<div class="box-result text-center text-lg-left">
+							<figure class="mb-5"><img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/vocation.png" alt="" class="mx-auto mx-lg-0"></figure>
 							<div class="title mb-5">
 								<h2>100% vocation <br> webcam</h2>
 							</div>
-							<div class="paragraf mb-5 text-justify">
+							<div class="paragraf mb-5 text-center text-lg-justify">
 								<p>
 									Somos profesionales en múltiples áreas y te respentamos a tí, a nuesto staff y a nuestro espacio. tu crecimiento, resutados, caliadad de vida y seguridad
 								</p>
 							</div>
 							<div class="action">
 								<a href="mailto:contacto@casaadd.com.co" target="_blank" class="link">
-									pregunta lo que quieras >
+									pregunta lo que quieras <i class="fa fa-angle-right"></i>
 								</a>
 							</div>
 						</div>
 					</li>
 					<li>
-						<div class="box-result">
-							<figure class="mb-5"><img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/wevalue.png" alt=""></figure>
+						<div class="box-result text-center text-lg-left">
+							<figure class="mb-5"><img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/wevalue.png" alt="" class="mx-auto mx-lg-0"></figure>
 							<div class="title mb-5">
 								<h2>Valoramos <br> tu confianza</h2>
 							</div>
-							<div class="paragraf mb-5 text-justify">
+							<div class="paragraf mb-5 text-center text-lg-justify">
 								<p>
 									Nos atrevemo a soñar junto a ti. En nosotros encuentras aliados y soporte de calidad. Te aseguramos que tu experiencia con nosotros será discreta y memorable.
 								</p>
 							</div>
 							<div class="action">
 								<a href="mailto:contacto@casaadd.com.co" target="_blank" class="link">
-									pregunta lo que quieras >
+									pregunta lo que quieras <i class="fa fa-angle-right"></i>
 								</a>
 							</div>
 						</div>
 					</li>
 					<li>
-						<div class="box-result">
-							<figure class="mb-5"><img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/wework.png" alt=""></figure>
+						<div class="box-result text-center text-lg-left">
+							<figure class="mb-5"><img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/wework.png" alt="" class="mx-auto mx-lg-0"></figure>
 							<div class="title mb-5">
 								<h2>Respetamos <br> tu trabajo</h2>
 							</div>
-							<div class="paragraf mb-5 text-justify">
+							<div class="paragraf mb-5 text-center text-lg-justify">
 								<p>
 									Tus pagos serán puntuales y no habrá carta oscultas. Comprendemos que tienes metas por cumplir y te garantizamos que nuestro comportamieto sera impecable
 								</p>
 							</div>
 							<div class="action">
 								<a href="mailto:contacto@casaadd.com.co" target="_blank" class="link">
-									pregunta lo que quieras >
+									pregunta lo que quieras <i class="fa fa-angle-right"></i>
 								</a>
 							</div>
 						</div>
@@ -198,7 +198,7 @@ if ( is_front_page() ) {
 		<div class="col text-center py-5">
 			<div class="action">
 				<a href="mailto:contacto@casaadd.com.co" target="_blank" class="link">
-					Cuéntanos si te interesa >
+					Cuéntanos si te interesa <i class="fa fa-angle-right"></i>
 				</a>
 			</div>
 		</div>
@@ -271,7 +271,7 @@ if ( is_front_page() ) {
 			<div class="col text-center py-5">
 				<div class="action">
 					<a href="mailto:contacto@casaadd.com.co" target="_blank" class="link text-white">
-						pregunta lo que quieras >
+						pregunta lo que quieras <i class="fa fa-angle-right"></i>
 					</a>
 				</div>
 			</div>
@@ -283,8 +283,8 @@ if ( is_front_page() ) {
 <section class="blog">
 	<div class="container">
 		<div class="row">
-			<div class="col py-5">
-				<div class="box-blog py-5">
+			<div class="col pt-5 py-lg-5">
+				<div class="box-blog pt-5 py-lg-5">
 					<div class="title-intro cl-primary mb-5">
 						<h2>Bitacora de viaje webcam</h2>
 					</div>
@@ -299,7 +299,7 @@ if ( is_front_page() ) {
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-11">
-				<div class="d-flex flex-column flex-lg-row">
+				<div class="box-blog-card d-flex flex-column flex-lg-row">
 					<div class="flex-lg-fill order-2 order-lg-1">
 						<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/thum-min-003.jpg" alt="" class="img-fluid w-100">
 					</div>
@@ -315,7 +315,7 @@ if ( is_front_page() ) {
 						</div>
 					</div>
 				</div>
-				<div class="d-flex flex-column flex-lg-row">
+				<div class="box-blog-card d-flex flex-column flex-lg-row">
 					<div class="flex-lg- order-1 order-lg-2">
 							<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/thum-min-002.jpg" alt="" class="img-fluid w-100">
 					</div>
@@ -331,7 +331,7 @@ if ( is_front_page() ) {
 						</div>
 					</div>
 				</div>
-				<div class="d-flex flex-column flex-lg-row">
+				<div class="box-blog-card d-flex flex-column flex-lg-row">
 					<div class="flex-lg-fill order-2 order-lg-1">
 						<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/thum-min-003.jpg" alt="" class="img-fluid w-100">
 					</div>
@@ -353,7 +353,7 @@ if ( is_front_page() ) {
 			<div class="col text-center py-5">
 				<div class="action">
 					<a href="/blog" class="link">
-						Leer los articulos >
+						Leer los articulos <i class="fa fa-angle-right"></i>
 					</a>
 				</div>
 			</div>

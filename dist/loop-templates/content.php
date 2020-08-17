@@ -24,12 +24,13 @@ defined( 'ABSPATH' ) || exit;
 		<?php if ( 'post' === get_post_type() ) : ?>
 
 			<div class="entry-meta mb-4">
+				<i class="fa fa-calendar"></i>
 				<?php understrap_posted_on(); ?>
-				<span>
-					<span class="icon icon-likes"></span><span>152 Likes</span>
+				<span class="mx-2">
+					<i class="fa fa-heart"></i><span>152 Likes</span>
 				</span>
-				<span>
-					<span class="icon icon-coments"></span><span>210 Coments</span>
+				<span class="mx-2">
+					<i class="fa fa-comment"></i><span>210 Coments</span>
 				</span>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>

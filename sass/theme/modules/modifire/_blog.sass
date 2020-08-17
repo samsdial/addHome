@@ -117,8 +117,26 @@
 		color: $SecondBold
 		+press
 			color: $SecondBold
+.list-shared
+	border: 1px solid $silver
+	border-radius: 0
+	+MQMAX(SL)
+		flex-direction: row
+	li.list-group-item
+		border: none
+		padding: $spacers2 $spacers4
+		border-left: 2px solid $gainsboro !important
+		+MQMAX(SL)
+			padding: $spacers2 $spacers3
+		a
+			color: $silver
+
+/// COMMENTS
 .comments-area
-	padding: $spacers4 0
+	padding: $spacers4 0 rem-calc(150px)
+	.comments-title
+		background: $gainsboro
+		padding: $spacers5 $spacers5 0 $spacers5
 	.comment-reply-title
 		font-size: $h2-font-size
 		padding: $spacers4 0
@@ -131,3 +149,38 @@
 			background: $gainsboro
 			footer.comment-meta
 				background: transparent
+				.comment-author
+					img
+						width: 80px
+						height: 80px
+						border-radius: 50%
+						margin-right: $spacer
+				.comment-metadata
+					padding-left: rem-calc(95px)
+					margin-top: rem-calc(-35px)
+    				margin-bottom: rem-calc(37px)
+					a
+						color: $silver
+			.comment-content
+				margin-bottom: rem-calc(15px)
+				p
+					color: $Second
+			.comment-content,
+			.reply
+				padding-left: rem-calc(95px)
+
+
+form.comment-form
+	textarea.form-control,
+	input.form-control
+		background: $gainsboro
+		box-shadow: none
+		border-radius: 0
+	.form-submit
+		margin-top: $spacers4
+		.btn-secondary
+			background-color: $white !important
+			border: 2px solid $Primary
+			color: $Primary
+
+

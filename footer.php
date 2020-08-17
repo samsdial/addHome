@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <footer class="py-5">
 	<div class="container py-5">
 		<div class="row">
-			<div class="col-12 col-md-3 mb-4 mb-lg-0 align-self-start">
+			<div class="col-12 col-md-4 col-lg-3 mb-4 mb-lg-0 align-self-start">
 				<div class="box box-contact">
 					<div class="title mb-4">
 						<h2>Contáctanos</h2>
@@ -54,7 +54,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 				</div>
 			</div>
-			<div class="col-12 col-md-6 mb-4 mb-lg-0 align-self-end">
+			<div class="col-12 col-md-4 col-lg-6 mb-4 mb-lg-0 align-self-end">
 				<ul class="list-group list-group-horizontal list-social justify-content-center">
 					<li>
 						<a href="https://www.facebook.com/casa.add/" target="_blank" class="d-block px-3 px-md-2">
@@ -68,7 +68,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</li>
 				</ul>
 			</div>
-			<div class="col-12 col-md-3 mb-4 mb-lg-0 align-self-start">
+			<div class="col-12 col-md-4 col-lg-3 mb-4 mb-lg-0 align-self-start">
 			 	<div class="box box-instagram">
 					<div class="title mb-4">
 						<h2>Instagram</h2>
@@ -106,7 +106,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 <footer class="py-4 border_top">
 	<div class="container">
 		<div class="col-12">
-			<small class="cl--white"><?php understrap_site_info(); ?></small>
+			<small class="cl--white box-copy">
+				<ul class="list-group list-group-horizontal">
+					<li class="list-group-item">
+						<div>
+							© 2020 <span class="cl-primary"> CASA ADD</span>
+							made with all right reserved
+						</div>
+					</li>
+					<li class="list-group-item">
+						Sitio realizado por <a href="https://iccana.com/" target="_blank" class="">Agencia Iccana</a>
+					</li>
+				</ul>
+			</small>
 		</div>
 	</div>
 </footer>

@@ -29,14 +29,14 @@ if ( is_front_page() ) {
 			</div>
 		</div>
 		<div class="row align-items-start">
-			<div class="col-12 col-lg-6 order-1 order-lg-2 mb-4">
-				<figure><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/about-001.jpg" alt=""></figure>
+			<div class="col-12 col-lg-7 pl-3 order-1 order-lg-2 mb-4">
+				<figure class="pl-lg-5 ml-lg-5"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/about-001.jpg" alt=""></figure>
 			</div>
-			<div class="col-12 col-lg-6 order-2 order-lg-1">
+			<div class="col-12 col-lg-5 order-2 order-lg-1">
 				<div class="box-about">
 					<div class="subtitle">
 						<h2>
-							Somos el espacio seguro en Bogotá <br> que estabas buscando para iniciar <br> o pontenciar tu carrera como modelo <br> webcam. <br>
+							Somos el espacio seguro en Bogotá que estabas buscando para iniciar  o pontenciar tu carrera como modelo webcam.
 						</h2>
 					</div>
 					<div class="paragraf">
@@ -52,11 +52,11 @@ if ( is_front_page() ) {
 </section>
 <!-- ***ABOUT END*** -->
 <!-- ***ABOUT-intro*** -->
-<section class="about-placeholder bgc--primary py-5">
-	<figure><img src="<?php bloginfo('template_directory') ?>/images/png/about-002.jpg" alt=""></figure>
+<section class="about-placeholder bgc--primary">
+	<figure class="mb-3 mb-lg-0"><img src="<?php bloginfo('template_directory') ?>/images/png/about-002.jpg" class="img-fluid w-100" alt=""></figure>
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-12 col-lg-5 col-md-7 py-5">
+			<div class="col-12 col-lg-5 py-5">
 				<div class="box-about-placeholder">
 					<div class="paragraf text-white">
 						<p class="mb-3">
@@ -86,8 +86,8 @@ if ( is_front_page() ) {
 		<div class="row">
 			<div class="col-12 col-lg-4 mb-5 pb-3">
 				<div class="box-begin">
-					<figure class="mb-5"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--001.png" alt=""></figure>
-					<div class="card-body">
+					<figure class="mb-5 text-center text-lg-left"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--001.png" alt="" class="d-inline-block"></figure>
+					<div class="card-body text-center text-sm-left">
 						<div class="title mb-4">
 							<h2>Dedicación</h2>
 						</div>
@@ -101,8 +101,8 @@ if ( is_front_page() ) {
 			</div>
 			<div class="col-12 col-lg-4 mb-5 pb-3">
 				<div class="box-begin">
-					<figure class="mb-5"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--002.png" alt=""></figure>
-					<div class="card-body">
+					<figure class="mb-5 text-center text-lg-left"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--002.png" alt=""></figure>
+					<div class="card-body text-center text-sm-left">
 
 					<div class="title mb-4">
 						<h2>Profesionalismo</h2>
@@ -117,8 +117,8 @@ if ( is_front_page() ) {
 			</div>
 			<div class="col-12 col-lg-4 mb-5 pb-3">
 				<div class="box-begin">
-					<figure class="mb-5"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--003.png" alt=""></figure>
-					<div class="card-body">
+					<figure class="mb-5 text-center text-lg-left"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--003.png" alt=""></figure>
+					<div class="card-body text-center text-sm-left">
 
 					<div class="title mb-4">
 						<h2>Empatía</h2>
@@ -133,8 +133,8 @@ if ( is_front_page() ) {
 			</div>
 			<div class="col-12 col-lg-4 mb-5 pb-3">
 				<div class="box-begin">
-					<figure class="mb-5"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--004.png" alt=""></figure>
-					<div class="card-body">
+					<figure class="mb-5 text-center text-lg-left"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--004.png" alt=""></figure>
+					<div class="card-body text-center text-sm-left">
 						<div class="title mb-4">
 							<h2>Confianza</h2>
 						</div>
@@ -148,8 +148,8 @@ if ( is_front_page() ) {
 			</div>
 			<div class="col-12 col-lg-4 mb-5 pb-3">
 				<div class="box-begin">
-					<figure class="mb-5"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--005.png" alt=""></figure>
-					<div class="card-body">
+					<figure class="mb-5 text-center text-lg-left"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--005.png" alt=""></figure>
+					<div class="card-body text-center text-sm-left">
 					<div class="title mb-4">
 						<h2>Responsabilidad compartida</h2>
 					</div>
@@ -163,8 +163,8 @@ if ( is_front_page() ) {
 			</div>
 			<div class="col-12 col-lg-4 mb-5 pb-3">
 				<div class="box-begin">
-					<figure class="mb-5"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--006.png" alt=""></figure>
-					<div class="card-body">
+					<figure class="mb-5 text-center text-lg-left"><img src="<?php bloginfo('template_directory') ?>/images/png/begin--006.png" alt=""></figure>
+					<div class="card-body text-center text-sm-left">
 						<div class="title mb-4">
 							<h2>Calidad</h2>
 						</div>

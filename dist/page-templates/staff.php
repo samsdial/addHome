@@ -22,13 +22,13 @@ if ( is_front_page() ) {
 <section class="staff">
 	<div class="container">
 		<div class="row">
-			<div class="col py-5">
-				<div class="box-staff-intro py-5 cl-primary">
+			<div class="col py-3 py-lg-5">
+				<div class="box-staff-intro py-3 py-lg-5 cl-primary">
 					<h2>Staff</h2>
 				</div>
 			</div>
 		</div>
-		<div class="row pt-5">
+		<div class="row pt-4">
 			<div class="col pt-5">
 				<div class="d-flex flex-column flex-lg-row">
 					<div class="box-staff-card flex-column flex-lg-row">
@@ -135,7 +135,7 @@ if ( is_front_page() ) {
 				</div>
 				<div class="action">
 					<a href="" class="link">
-						Trabaja con nosotros >
+						Trabaja con nosotros <i class="fa fa-angle-right"></i>
 					</a>
 				</div>
 			</div>
