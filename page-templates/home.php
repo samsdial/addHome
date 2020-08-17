@@ -30,7 +30,7 @@ if ( is_front_page() ) {
 				</div>
 				<div class="paragraf mb-5 mr-lg-5 pr-lg-5">
 					<p>
-						Somos el espacio seguro que estavas buscando para iniciar o continuar tu carrera como modelo webcam Cumple tus metas personales profesionalmente aprovechando todos los sercivios y asesorías que te ofrecemos.
+						Somos el espacio seguro que estabas buscando para iniciar o continuar tu carrera como modelo webcam. Cumple tus metas personales profesionalmente aprovechando todos los servicios y asesorías que te ofrecemos.
 					</p>
 				</div>
 				<div class="action">
@@ -67,7 +67,7 @@ if ( is_front_page() ) {
 		<div class="row">
 			<div class="col-7">
 				<div class="box-result-intro py-5">
-					<h2> Con nosotros, tu dedicación tiene resultados</h2>
+					<h2>Con nosotros, tu dedicación tiene resultados</h2>
 				</div>
 			</div>
 		</div>
@@ -76,36 +76,36 @@ if ( is_front_page() ) {
 				<ul class="box-result-slider">
 					<li>
 						<div class="box-result text-center text-lg-left">
-							<figure class="mb-5"><img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/vocation.png" alt="" class="mx-auto mx-lg-0"></figure>
+							<figure class="mb-5"><img src="<?php bloginfo('template_directory') ?>/images/png/vocation.png" alt="" class="mx-auto mx-lg-0"></figure>
 							<div class="title mb-5">
-								<h2>100% vocation <br> webcam</h2>
+								<h2>100% vocación <br> webcam</h2>
 							</div>
-							<div class="paragraf mb-5 text-center text-lg-justify">
+							<div class="paragraf mb-5">
 								<p>
-									Somos profesionales en múltiples áreas y te respentamos a tí, a nuesto staff y a nuestro espacio. tu crecimiento, resutados, caliadad de vida y seguridad
+									Somos profesionales en múltiples áreas y te respetamos a tí, a nuestro staff y a nuestro espacio. Tu crecimiento, resultados, calidad de vida y seguridad son nuestra prioridad.
 								</p>
 							</div>
 							<div class="action">
-								<a href="mailto:contacto@casaadd.com.co" target="_blank" class="link">
-									pregunta lo que quieras <i class="fa fa-angle-right"></i>
+								<a href="index.php/trabaja-con-nosotros/" class="link">
+									Pregunta lo que quieras <i class="fa fa-angle-right"></i>
 								</a>
 							</div>
 						</div>
 					</li>
 					<li>
 						<div class="box-result text-center text-lg-left">
-							<figure class="mb-5"><img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/wevalue.png" alt="" class="mx-auto mx-lg-0"></figure>
+							<figure class="mb-5"><img src="<?php bloginfo('template_directory') ?>/images/png/wevalue.png" alt="" class="mx-auto mx-lg-0"></figure>
 							<div class="title mb-5">
 								<h2>Valoramos <br> tu confianza</h2>
 							</div>
-							<div class="paragraf mb-5 text-center text-lg-justify">
+							<div class="paragraf mb-5">
 								<p>
-									Nos atrevemo a soñar junto a ti. En nosotros encuentras aliados y soporte de calidad. Te aseguramos que tu experiencia con nosotros será discreta y memorable.
+									Nos atrevemos a soñar junto a ti. En nosotros encuentras aliados y soporte de calidad. Te aseguramos que tu experiencia con nosotros será discreta y memorable.
 								</p>
 							</div>
 							<div class="action">
-								<a href="mailto:contacto@casaadd.com.co" target="_blank" class="link">
-									pregunta lo que quieras <i class="fa fa-angle-right"></i>
+								<a href="index.php/trabaja-con-nosotros/" class="link">
+									Pregunta lo que quieras <i class="fa fa-angle-right"></i>
 								</a>
 							</div>
 						</div>
@@ -116,14 +116,14 @@ if ( is_front_page() ) {
 							<div class="title mb-5">
 								<h2>Respetamos <br> tu trabajo</h2>
 							</div>
-							<div class="paragraf mb-5 text-center text-lg-justify">
+							<div class="paragraf mb-5">
 								<p>
-									Tus pagos serán puntuales y no habrá carta oscultas. Comprendemos que tienes metas por cumplir y te garantizamos que nuestro comportamieto sera impecable
+									Tus pagos serán puntuales y no habrá cartas ocultas. Comprendemos que tienes metas por cumplir y te garantizamos que nuestro cumplimiento será impecable.
 								</p>
 							</div>
 							<div class="action">
-								<a href="mailto:contacto@casaadd.com.co" target="_blank" class="link">
-									pregunta lo que quieras <i class="fa fa-angle-right"></i>
+								<a href="index.php/trabaja-con-nosotros/" class="link">
+									Pregunta lo que quieras <i class="fa fa-angle-right"></i>
 								</a>
 							</div>
 						</div>
@@ -197,7 +197,7 @@ if ( is_front_page() ) {
 	<div class="row">
 		<div class="col text-center py-5">
 			<div class="action">
-				<a href="mailto:contacto@casaadd.com.co" target="_blank" class="link">
+				<a href="index.php/trabaja-con-nosotros/" class="link">
 					Cuéntanos si te interesa <i class="fa fa-angle-right"></i>
 				</a>
 			</div>
@@ -225,7 +225,7 @@ if ( is_front_page() ) {
 							<div class="card-body">
 								<h2 class="card-title">Legalidad</h2>
 								<p class="card-text">
-									Cumplirás con todas las normas legales para que lo único que tengas que hacer es esforzarte por ser la mejos modelo webcam de todas.
+									Cumplirás con todas las normas legales para que lo único que tengas que hacer es esforzarte por ser la mejor modelo webcam de todas.
 								</p>
 							</div>
 						</div>
@@ -234,10 +234,9 @@ if ( is_front_page() ) {
 						<div class="card">
 							<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/benefics-03.jpg" alt="" class="card-img-top">
 							<div class="card-body">
-								<h2 class="card-title">Buenas Finanzas</h2>
+								<h2 class="card-title">Buenas finanzas</h2>
 								<p class="card-text">
-									seguirás una contabilidad que te permitirá nacionalizar tus ganancias rápido y seguro con la posibilidad
-									de negociar altas tasas de cambio
+									Seguirás una contabilidad que te permitirá nacionalizar tus ganancias rápido y seguro con la posibilidad de negociar altas tasas de cambio del dólar.
 								</p>
 							</div>
 						</div>
@@ -248,7 +247,7 @@ if ( is_front_page() ) {
 							<div class="card-body">
 								<h2 class="card-title">Ambiente amigable</h2>
 								<p class="card-text">
-									En nuestra instalaciones siempre podrás hacer relaciones interpresonales de calidad, respeto y empatía.
+									En nuestras instalaciones siempre podrás hacer relaciones interpersonales de calidad, respeto y empatía.
 								</p>
 							</div>
 						</div>
@@ -270,8 +269,8 @@ if ( is_front_page() ) {
 		<div class="row">
 			<div class="col text-center py-5">
 				<div class="action">
-					<a href="mailto:contacto@casaadd.com.co" target="_blank" class="link text-white">
-						pregunta lo que quieras <i class="fa fa-angle-right"></i>
+					<a href="index.php/trabaja-con-nosotros/" class="link text-white">
+						Hablemos de tu futuro <i class="fa fa-angle-right"></i>
 					</a>
 				</div>
 			</div>
@@ -352,8 +351,8 @@ if ( is_front_page() ) {
 		<div class="row py-5">
 			<div class="col text-center py-5">
 				<div class="action">
-					<a href="/blog" class="link">
-						Leer los articulos <i class="fa fa-angle-right"></i>
+					<a href="index.php/blog" class="link">
+						Leer los artículos <i class="fa fa-angle-right"></i>
 					</a>
 				</div>
 			</div>
@@ -373,8 +372,8 @@ if ( is_front_page() ) {
 					</div>
 					<div class="paragraf mb-5">
 						<p>
-							visita nuestras instalaciones en Bogotá y hablemos <br>
-							abiertamente. Tús  dudas son nuestras inquietudes.
+							Visita nuestras instalaciones en Bogotá y hablemos <br>
+							abiertamente. Tus dudas son nuestras inquietudes.
 						</p>
 					</div>
 					<div class="action mt-2">

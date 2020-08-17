@@ -37,17 +37,17 @@ if ( is_front_page() ) {
 					<div class="register mb-5 mb-xl-0">
 						<form id="restister" onsubmit="return false;">
 							<div class="row">
-								<div class="col-12 col-xl-9 mb-4">
+								<div class="col-12 col-xl-7 mb-4">
 									<label for="">
-										<span class="align-baseline">Nombre real o artistico *</span>
+										<span class="align-baseline">Nombre real o artístico*</span>
 									</label>
 									<input type="text" class="form-control name" id="name" name="name">
 									<small class="error d-none form-text text-muted">Agregué su nombre completo.</small>
 								</div>
-								<div class="col-12 col-xl-3 mb-4">
+								<div class="col-12 col-xl-5 mb-4">
 									<label for="">
 										<span class="align-baseline">
-											Telefono/Móvil*
+											Teléfono de contacto*
 										</span>
 									</label>
 									<input type="text" class="form-control phone" id="phone" name="phone">
@@ -58,7 +58,7 @@ if ( is_front_page() ) {
 								<div class="col-12 mb-4">
 									<label for="" >
 										<span class="align-baseline">
-											Correo electronico*
+											Correo electrónico*
 										</span>
 									</label>
 									<input type="text" class="form-control email" id="email" name="email">
@@ -77,7 +77,7 @@ if ( is_front_page() ) {
 							</div>
 							<div class="row pt-3">
 								<div class="col-12">
-									<button type="submit" id="submit" class="btn btn_primary">Enviar ></button>
+									<button type="submit" id="submit" class="btn btn_primary">Enviar <i class="fa fa-angle-right"></i></button>
 									<div class="alerta">
 										<p></p>
 									</div>
