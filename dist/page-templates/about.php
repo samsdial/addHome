@@ -36,7 +36,7 @@ if ( is_front_page() ) {
 				<div class="box-about">
 					<div class="subtitle">
 						<h2>
-							Somos el espacio seguro en Bogotá que estabas buscando para iniciar  o pontenciar tu carrera como modelo webcam.
+							Somos el espacio seguro en Bogotá que estabas buscando para iniciar o potenciar  tu carrera como modelo webcam.
 						</h2>
 					</div>
 					<div class="paragraf">
@@ -60,7 +60,7 @@ if ( is_front_page() ) {
 				<div class="box-about-placeholder">
 					<div class="paragraf text-white">
 						<p class="mb-3">
-							Llevamos un par de años en el mercado y hemos trabajo con más de 80 modelos on-line con quienes hemos hecho un gran equipo desde el primer momento. Muchas de ellas están con nosotros desde el comienzo y sus historias son nuestro más grande orgullo.
+							Llevamos un par de años en el mercado y hemos trabajado con más de 80 modelos on-line con quienes hemos hecho un gran equipo desde el primer momento. Muchas de ellas están con nosotros desde el comienzo y sus historias son nuestro más grande orgullo.
 						</p>
 						<p>
 							En Casa ADD, ofrecemos respeto en todos los puntos de contacto (desde el administrador, el consumidor, los usuarios, los socios, los fotógrafos, el psicólogo hasta las demás modelos).
@@ -79,7 +79,7 @@ if ( is_front_page() ) {
 		<div class="row">
 			<div class="col py-5">
 				<div class="title-intro py-5 mt-3">
-					<h2>Nuestros Principios</h2>
+					<h2>Nuestros principios</h2>
 				</div>
 			</div>
 		</div>
@@ -109,7 +109,7 @@ if ( is_front_page() ) {
 					</div>
 					<div class="paragraf mb-5">
 						<p>
-							todo lo hacemos y lo solicitamos con parámetros de conducta y moral que te dignifique laboral y humanamente.
+							Todo lo hacemos y lo solicitamos con parámetros de conducta y moral que te dignifiquen laboral y humanamente.
 						</p>
 					</div>
 					</div>
@@ -125,7 +125,7 @@ if ( is_front_page() ) {
 					</div>
 					<div class="paragraf mb-5">
 						<p>
-							Entendemos que la convivencia en paz y armonía requiere sentir lo que sienten los demás y crear acuerdos de beneficio mutu.
+							Entendemos que la convivencia en paz y armonía requiere sentir lo que sienten los demás y crear acuerdos de beneficio mutuo.
 						</p>
 					</div>
 					</div>
@@ -155,7 +155,7 @@ if ( is_front_page() ) {
 					</div>
 					<div class="paragraf mb-5">
 						<p>
-							Dirigimos nuestros trabajo al bienestar común y no solo al beneficio personal. Cuando creces, todos crecemos.
+							Dirigimos nuestro trabajo al bienestar común y no solo al beneficio personal. Cuando creces, todos crecemos.
 						</p>
 					</div>
 					</div>
@@ -170,7 +170,7 @@ if ( is_front_page() ) {
 						</div>
 						<div class="paragraf mb-5">
 							<p>
-								Nuestra vocación es de servicio a tus seguidores. Todos debemos aportar a que la experiencia que tengas sea de calidad.
+								Nuestra vocación es de servicio a tus seguidores. Todos debemos aportar a que la experiencia que tengan sea de primera calidad.
 							</p>
 						</div>
 					</div>
@@ -181,7 +181,9 @@ if ( is_front_page() ) {
 		<div class="row pb-5">
 			<div class="col text-center box-about-prefotter pb-5">
 				<div class="subtitle mb-5">
-					<h2>Conoce nuestros estudios, nuestros equipos <br> y las personas que harán parte de tu nuevo equipo</h2>
+					<h2>
+					Conoce nuestros estudios, nuestros equipos <br> y las personas que harán parte de tu nuevo equipo.
+					</h2>
 				</div>
 				<div class="action">
 					<a href="" class="link">
@@ -197,20 +199,19 @@ if ( is_front_page() ) {
 	<!-- ***CONTAINER*** -->
 		<div class="box-prefotter d-lg-flex w-100 w-lg-70">
 				<figure class="w-100 w-lg-70">
-					<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/banner-fot.jpg" class="img-fluid w-100" alt="">
+					<img src="<?php bloginfo('template_directory') ?>/images/png/banner-fot.jpg" class="img-fluid w-100" alt="">
 				</figure>
 				<div class="box-prefotter-info text-white align-self-center text-center w-100 w-lg-50 px-5 py-5 py-lg-0">
 					<div class="title mb-3">
-						<h2>Atrevete a soñar <br> con nosotros</h2>
+						<h2>Atrévete a soñar <br> con nosotros. </h2>
 					</div>
 					<div class="paragraf mb-5">
 						<p>
-							visita nuestras instalaciones en Bogotá y hablemos <br>
-							abiertamente. Tús  dudas son nuestras inquietudes.
+							Visita nuestras instalaciones en Bogotá y hablemos <br> de tu futuro como modelo webcam de Casa ADD.
 						</p>
 					</div>
 					<div class="action mt-2">
-						<a href=""class="btn btn_primary">Agendar tu visita</a>
+						<a href=""class="btn btn_primary">Agenda tu visita</a>
 					</div>
 				</div>
 		</div>

@@ -199,7 +199,7 @@ if ( is_front_page() ) {
 	<!-- ***CONTAINER*** -->
 		<div class="box-prefotter d-lg-flex w-100 w-lg-70">
 				<figure class="w-100 w-lg-70">
-					<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/banner-fot.jpg" class="img-fluid w-100" alt="">
+					<img src="<?php bloginfo('template_directory') ?>/images/png/banner-fot.jpg" class="img-fluid w-100" alt="">
 				</figure>
 				<div class="box-prefotter-info text-white align-self-center text-center w-100 w-lg-50 px-5 py-5 py-lg-0">
 					<div class="title mb-3">

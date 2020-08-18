@@ -55,7 +55,7 @@ if ( is_front_page() ) {
 			</ul>
 		</div>
 		<div class="whatsaap">
-			<a href="https://api.whatsapp.com/send?phone=57350%205232208&text=&source=&data=&app_absent=" class="">
+			<a href="https://api.whatsapp.com/send?phone=57350%205232208&text=&source=&data=&app_absent=" target="_blank" class="">
 				<img src="<?php bloginfo('template_directory') ?>/images/png/whatsaap.png"  alt="">
 			</a>
 		</div>
@@ -112,7 +112,7 @@ if ( is_front_page() ) {
 					</li>
 					<li>
 						<div class="box-result text-center text-lg-left">
-							<figure class="mb-5"><img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/wework.png" alt="" class="mx-auto mx-lg-0"></figure>
+							<figure class="mb-5"><img src="<?php bloginfo('template_directory') ?>/images/png/wework.png" alt="" class="mx-auto mx-lg-0"></figure>
 							<div class="title mb-5">
 								<h2>Respetamos <br> tu trabajo</h2>
 							</div>
@@ -147,7 +147,7 @@ if ( is_front_page() ) {
 	</div>
 	<div class="d-flex flex-column flex-lg-row">
 		<div class="flex-lg-fill">
-			<div class="box-offer box-offer-max" style="background-image: url('https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/rooms-001.jpg')">
+			<div class="box-offer box-offer-max" style="background-image: url('<?php bloginfo('template_directory') ?>/images/png/rooms-001.jpg')">
 				<div class="title text-white p-5">
 					<h2>Un estudio de calidad <br> en Bogotá</h2>
 				</div>
@@ -165,7 +165,7 @@ if ( is_front_page() ) {
 							</div>
 						</div>
 						<div class="col-12 col-lg-6">
-							<div class="box-offer box-offer-min"style="background-image: url('https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/staff.jpg')">
+							<div class="box-offer box-offer-min"style="background-image: url('<?php bloginfo('template_directory') ?>/images/png//staff.jpg')">
 								<div class="title text-white p-5 d-block d-lg-none">
 									<h2>Las Mejores <br> condiciones <br> de limpieza</h2>
 								</div>
@@ -176,7 +176,7 @@ if ( is_front_page() ) {
 				<div>
 					<div class="row no-gutters">
 						<div class="col-12 col-lg-6 d-lg-inline-block">
-							<div class="box-offer box-offer-min"style="background-image: url('https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/staff-002.jpg')">
+							<div class="box-offer box-offer-min"style="background-image: url('<?php bloginfo('template_directory') ?>/images/png//staff-002.jpg')">
 								<div class="title text-white p-5 d-block d-lg-none">
 									<h2>Equipo humano <br> que busca tu <br> crecimiento</h2>
 								</div>
@@ -221,7 +221,7 @@ if ( is_front_page() ) {
 				<ul class="box-benefit box-benefit-slider">
 					<li>
 						<div class="card">
-							<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/benefics-02.jpg" alt="" class="card-img-top">
+							<img src="<?php bloginfo('template_directory') ?>/images/png/benefics-02.jpg" alt="" class="card-img-top">
 							<div class="card-body">
 								<h2 class="card-title">Legalidad</h2>
 								<p class="card-text">
@@ -232,7 +232,7 @@ if ( is_front_page() ) {
 					</li>
 					<li>
 						<div class="card">
-							<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/benefics-03.jpg" alt="" class="card-img-top">
+							<img src="<?php bloginfo('template_directory') ?>/images/png/benefics-03.jpg" alt="" class="card-img-top">
 							<div class="card-body">
 								<h2 class="card-title">Buenas finanzas</h2>
 								<p class="card-text">
@@ -243,7 +243,7 @@ if ( is_front_page() ) {
 					</li>
 					<li>
 						<div class="card">
-							<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/benefics-04.jpg" alt="" class="card-img-top">
+							<img src="<?php bloginfo('template_directory') ?>/images/png/benefics-04.jpg" alt="" class="card-img-top">
 							<div class="card-body">
 								<h2 class="card-title">Ambiente amigable</h2>
 								<p class="card-text">
@@ -254,7 +254,7 @@ if ( is_front_page() ) {
 					</li>
 					<li>
 						<div class="card">
-							<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/benefics-05.jpg" alt="" class="card-img-top">
+							<img src="<?php bloginfo('template_directory') ?>/images/png/benefics-05.jpg" alt="" class="card-img-top">
 							<div class="card-body">
 								<h2 class="card-title">Tu propio equipo</h2>
 								<p class="card-text">
@@ -300,7 +300,7 @@ if ( is_front_page() ) {
 			<div class="col-11">
 				<div class="box-blog-card d-flex flex-column flex-lg-row">
 					<div class="flex-lg-fill order-2 order-lg-1">
-						<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/thum-min-003.jpg" alt="" class="img-fluid w-100">
+						<img src="<?php bloginfo('template_directory') ?>/images/png/thum-min-003.jpg" alt="" class="img-fluid w-100">
 					</div>
 					<div class="flex-lg-fill order-1 order-lg-2">
 						<div class="box-blog box-blog-info">
@@ -316,7 +316,7 @@ if ( is_front_page() ) {
 				</div>
 				<div class="box-blog-card d-flex flex-column flex-lg-row">
 					<div class="flex-lg- order-1 order-lg-2">
-							<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/thum-min-002.jpg" alt="" class="img-fluid w-100">
+							<img src="<?php bloginfo('template_directory') ?>/images/png/thum-min-002.jpg" alt="" class="img-fluid w-100">
 					</div>
 					<div class="flex-lg-fill order-lg-1">
 						<div class="box-blog box-blog-info text-right">
@@ -332,7 +332,7 @@ if ( is_front_page() ) {
 				</div>
 				<div class="box-blog-card d-flex flex-column flex-lg-row">
 					<div class="flex-lg-fill order-2 order-lg-1">
-						<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/thum-min-003.jpg" alt="" class="img-fluid w-100">
+						<img src="<?php bloginfo('template_directory') ?>/images/png/thum-min-003.jpg" alt="" class="img-fluid w-100">
 					</div>
 					<div class="flex-lg-fill order-1 order-lg-2">
 						<div class="box-blog box-blog-info">
@@ -364,7 +364,7 @@ if ( is_front_page() ) {
 	<!-- ***CONTAINER*** -->
 		<div class="box-prefotter d-lg-flex w-100 w-lg-70">
 				<figure class="w-100 w-lg-70">
-					<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/banner-fot.jpg" class="img-fluid w-100" alt="">
+					<img src="<?php bloginfo('template_directory') ?>/images/png/banner-fot.jpg" class="img-fluid w-100" alt="">
 				</figure>
 				<div class="box-prefotter-info text-white align-self-center text-center w-100 w-lg-50 px-5 py-5 py-lg-0">
 					<div class="title mb-3">

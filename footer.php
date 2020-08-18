@@ -31,13 +31,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 								</a>
 							</li>
 							<li>
-								<a href="" class="d-block link-footer mb-1">
+								<a href="mailto:contacto@casaadd.com" target="_blank" class="d-block link-footer mb-1">
 									<span class="icon icon-email"></span>
 									<span class="align-bottom ml-2"> contacto@casaadd.com</span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="d-block link-footer mb-1">
+								<a href="https://api.whatsapp.com/send?phone=57350%205232208&text=&source=&data=&app_absent=" target="_blank" class="d-block link-footer mb-1">
 									<span class="icon icon-phone"></span>
 									<span class="align-bottom ml-2"> 350 5232208</span>
 								</a>
@@ -78,21 +78,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<li>
 								<a href="" class="item">
 									<span class="image">
-										<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/insta-01.jpg" alt="photo">
+										<img src="<?php bloginfo('template_directory') ?>/images/png/insta-01.jpg" alt="photo">
 									</span>
 								</a>
 							</li>
 							<li>
 								<a href="" class="item">
 									<span class="image">
-										<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/insta-02.jpg" alt="photo">
+										<img src="<?php bloginfo('template_directory') ?>/images/png/insta-02.jpg" alt="photo">
 									</span>
 								</a>
 							</li>
 							<li>
 								<a href="" class="item">
 									<span class="image">
-										<img src="https://casaadd.ddatechsolutions.com/wp-content/uploads/2020/08/insta-03.jpg" alt="photo">
+										<img src="<?php bloginfo('template_directory') ?>/images/png/insta-03.jpg" alt="photo">
 									</span>
 								</a>
 							</li>
