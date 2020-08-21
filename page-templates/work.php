@@ -23,19 +23,48 @@ if ( is_front_page() ) {
 	<!-- ***CONTAINER*** -->
 		<div class="box-work d-flex flex-column flex-lg-row">
 				<figure class="flex-column flex-lg-row">
-					<img src="<?php bloginfo('template_directory') ?>/images/png/work.jpg" class="img-fluid" style="width: 1800px;" alt="">
+					<!-- <img src="<?php // bloginfo('template_directory') ?>/images/png/work.jpg"  alt=""> -->
+					<?php $imagen_caracteristica = get_field( 'imagen_caracteristica' ); ?>
+					<?php if ( $imagen_caracteristica ) : ?>
+						<img src="<?php echo esc_url( $imagen_caracteristica['url'] ); ?>" class="img-fluid" style="width: 1800px;" alt="<?php echo esc_attr( $imagen_caracteristica['alt'] ); ?>" />
+					<?php endif; ?>
 				</figure>
 				<div class="box-work-info align-self-center flex-column flex-lg-row">
-					<div class="title mb-4 cl-primary">
-						<h2>Trabaja <br> con nosotros</h2>
-					</div>
-					<div class="paragraf mb-5">
-						<p>
-							Déjanos resolver cualquier inquietud que tengas. Escríbenos para pedir una entrevista, para agendar una visita en Bogotá o simplemente para decirnos lo que quieras.
-						</p>
-					</div>
+					<?php
+						while ( have_posts() ) {
+							the_post();
+							get_template_part( 'loop-templates/content', 'alternative' );
+
+							// If comments are open or we have at least one comment, load up the comment template.
+							if ( comments_open() || get_comments_number() ) {
+								comments_template();
+							}
+						}
+					?>
 					<div class="register mb-5 mb-xl-0">
-						<form id="restister" onsubmit="return false;">
+							<ul class="nav nav-tabs" id="myTab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Modelo</a>
+								</li>
+								<li class="nav-item" role="presentation">
+									<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Monitor</a>
+								</li>
+							</ul>
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+									<div class="tap-content py-4">
+										<?php the_field( 'form-model' ); ?>
+									</div>
+								</div>
+								<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+									<div class="tap-content py-4">
+										<?php the_field( 'form_monitor' ); ?>
+									</div>
+								</div>
+							</div>
+
+
+						<!-- <form id="restister" onsubmit="return false;">
 							<div class="row">
 								<div class="col-12 col-xl-7 mb-4">
 									<label for="">
@@ -83,7 +112,7 @@ if ( is_front_page() ) {
 									</div>
 								</div>
 							</div>
-						</form>
+						</form> -->
 					</div>
 				</div>
 		</div>

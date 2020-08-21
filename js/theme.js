@@ -7879,5 +7879,7 @@ $(document).ready(function () {
         slidesToScroll: 1
       }
     }]
-  });
+  }); //js-slider
+
+  $('.js-slider').slick();
 });

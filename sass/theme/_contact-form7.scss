@@ -36,7 +36,9 @@
   input[type=file],
   select,
   textarea {
-    @extend .form-control;
+		@extend .form-control;
+		z-index: 7;
+		position: relative;
   }
 
   // submit button, inherit .btn and .btn-outline-primary classes.
@@ -65,10 +67,15 @@
 
   // not valid tip for each control
   .wpcf7-not-valid-tip {
-		color: #FA8072;
+		color: white;
 		font-size: 12px;
+		background: #f20e4c;
+		border-bottom-left-radius: 22px;
+		border-bottom-right-radius: 22px;
+		padding-top: 16px;
+		padding-left: 18px;
+		margin-top: -16px;
   }
-
   // validation errors ourput bottom of form
   .wpcf7-validation-errors {
     @extend .form-control;
@@ -76,6 +83,15 @@
     border: 1px solid $gray-200;
   }
 }
+
+// Checbox requerido
+.wpcf7-checkbox {
+	width: 100%;
+	display: block;
+	background: white;
+	position: relative;
+}
+
 .wpcf7-form-control-wrap.acept {
 	margin-bottom: 15px;
 	display: block;

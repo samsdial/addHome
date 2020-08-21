@@ -31,4 +31,144 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 	}
 } // End of if function_exists( 'understrap_scripts' ).
 
+// About
+add_action('init', 'about');
+function about() {
+    $labels = array(
+        'name' => __( 'Quienes Somos' ),
+        'singular_name' => __( 'About Sección' ),
+        'add_new' => __( 'Añadir Nuevo' ),
+        'add_new_item' => __( 'Añadir Nueva Sección' ),
+        'edit_item' => __( 'Editar Sección' ),
+        'new_item' => __( 'Nueva Sección'),
+        'view_item' => __( 'Ver Producto'),
+        'search_items' => __( 'Buscar Producto'),
+        'not_found' =>  __('No se encontró nada'),
+        'not_found_in_trash' => __('No se encontró nada en la papelera'),
+        'parent_item_colon' => ''
+    );
+    $args = array(
+        'labels' => $labels,
+        'menu_icon' => 'dashicons-admin-generic',
+        'public' => true,
+        'rewrite' => array( 'slug' => 'about' ),
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'menu_position' => null,
+//         'taxonomies' => array( 'category' ),
+        'supports' => array('title','thumbnail')
+    );
+    register_post_type( 'about' , $args );
+    flush_rewrite_rules();
+}
+// // wemake -- Que Hacemos
+// add_action('init', 'wemake');
+// function wemake() {
+//     $labels = array(
+//         'name' => __( 'Que Hacemos' ),
+//         'singular_name' => __( 'wemake' ),
+//         'add_new' => __( 'Añadir Nuevo' ),
+//         'add_new_item' => __( 'Añadir Nueva Sección' ),
+//         'edit_item' => __( 'Editar Sección' ),
+//         'new_item' => __( 'Nueva Sección'),
+//         'view_item' => __( 'Ver Sección'),
+//         'search_items' => __( 'Buscar Producto'),
+//         'not_found' =>  __('No se encontró nada'),
+//         'not_found_in_trash' => __('No se encontró nada en la papelera'),
+//         'parent_item_colon' => ''
+//     );
+//     $args = array(
+//         'labels' => $labels,
+//         'menu_icon' => 'dashicons-admin-generic',
+//         'public' => true,
+//         'rewrite' => array( 'slug' => 'wemake' ),
+//         'capability_type' => 'post',
+//         'hierarchical' => false,
+//         'menu_position' => null,
+//         //'taxonomies' => array( 'category' ),
+//         'supports' => array('title','thumbnail')
+//     );
+//     register_post_type( 'wemake' , $args );
+//     flush_rewrite_rules();
+// }
+// // Servicios services
+// add_action('init', 'services');
+// function services() {
+//     $labels = array(
+//         'name' => __( 'Servicios' ),
+//         'singular_name' => __( 'services' ),
+//         'add_new' => __( 'Añadir Nuevo' ),
+//         'add_new_item' => __( 'Añadir Nueva Servicio' ),
+//         'edit_item' => __( 'Editar Servicio' ),
+//         'new_item' => __( 'Nueva Servicio'),
+//         'view_item' => __( 'Ver Servicio'),
+//         'search_items' => __( 'Buscar Servicio'),
+//         'not_found' =>  __('No se encontró nada'),
+//         'not_found_in_trash' => __('No se encontró nada en la papelera'),
+//         'parent_item_colon' => ''
+//     );
+//     $args = array(
+//         'labels' => $labels,
+//         'menu_icon' => 'dashicons-admin-generic',
+//         'public' => true,
+//         'rewrite' => array( 'slug' => 'services' ),
+//         'capability_type' => 'post',
+//         'hierarchical' => false,
+//         'menu_position' => null,
+//         'taxonomies' => array( 'category' ),
+//         'supports' => array('title','thumbnail')
+//     );
+//     register_post_type( 'services' , $args );
+//     flush_rewrite_rules();
+// }
+
 add_action( 'wp_enqueue_scripts', 'understrap_scripts' );
+
+if ( function_exists('acf_add_options_page') ) {
+
+    $page = acf_add_options_page(array(
+        'page_title'    => __('Trabaja con Nosotros', 'WorkIn'),
+        'menu_title'    => __('Trabaja con Nosotros', 'WorkIn'),
+        'menu_slug'     => 'theme-work-in',
+        'capability'    => 'manage_options',
+        'redirect'  => false,
+        'rewrite' => array( 'slug' => 'about' ),
+    ));
+
+    $page = acf_add_options_page(array(
+        'page_title'    => __('Configuration General Home', 'WebSite'),
+        'menu_title'    => __('Home WebSite', 'WebSite'),
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'manage_options',
+        'redirect'  => false
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title' => __('Configuracion Slider (Principal)', 'WebSite'),
+        'menu_title' => __('Configuracion Slider (Principal)', 'WebSite'),
+        'menu_slug' => 'theme-slider-main-configuration',
+        'capability' => 'manage_options',
+        'parent_slug' => 'theme-general-settings',
+        'position' => false,
+        'icon_url' => false,
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title' => __('Copyright', 'WebSite'),
+        'menu_title' => __('Copyright Info', 'WebSite'),
+        'menu_slug' => 'theme-service-configuration',
+        'capability' => 'manage_options',
+        'parent_slug' => 'theme-general-settings',
+        'position' => false,
+        'icon_url' => false,
+    ));
+    acf_add_options_sub_page(array(
+        'page_title' => __('Configuracion Nosotros', 'WebSite'),
+        'menu_title' => __('Configuracion Nosotros', 'WebSite'),
+        'menu_slug' => 'theme-service',
+        'capability' => 'manage_options',
+        'parent_slug' => 'theme-general-settings',
+        'position' => false,
+        'icon_url' => false,
+    ));
+}

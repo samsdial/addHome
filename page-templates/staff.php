@@ -80,6 +80,8 @@ if ( is_front_page() ) {
 					</div>
 					<div class="box-staff-card flex-column flex-lg-row">
 						<div class="box-staff">
+
+
 							<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-005.jpg" alt=""></figure>
 							<div class="card-body ">
 								<div class="title mb-3">
@@ -97,7 +99,18 @@ if ( is_front_page() ) {
 				<div class="d-flex flex-column flex-lg-row">
 					<div class="box-staff-card flex-column flex-lg-row">
 						<div class="box-staff">
-							<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-002.jpg" alt=""></figure>
+							<ul class="js-slider min-slider">
+								<li class="">
+									<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-002.jpg" alt=""></figure>
+								</li>
+								<li class="">
+									<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-003.jpg" alt=""></figure>
+								</li>
+								<li class="">
+									<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-005.jpg" alt=""></figure>
+								</li>
+							</ul>
+
 							<div class="card-body">
 								<div class="title mb-3">
 									<h2>Infraestructura de calidad (Cuartos, zonas comunes, zona adminitrativa)</h2>
