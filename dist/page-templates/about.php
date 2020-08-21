@@ -36,7 +36,7 @@ if ( is_front_page() ) {
 				<div class="box-about">
 					<div class="subtitle">
 						<h2>
-							Somos el espacio seguro en Bogotá que estabas buscando para iniciar o potenciar  tu carrera como modelo webcam.
+							Somos nuestras modelos, por y para ellas creamos el espacio más seguro y personalizado de Bogotá, donde iniciarás o potenciaras tu carrera como modelo webcam
 						</h2>
 					</div>
 					<div class="paragraf">

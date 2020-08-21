@@ -49,7 +49,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 							<h1 class="navbar-brand mb-0">
 								<a class="align-middle" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
 									<span class="logo logo_site d-inline-block align-middle"></span>
-									<span class="d-none d-lg-inline-block ml-3 align-middle txt_size--min">Espacio y servicios premium <br> para modelos webcam en Bogotá</span>
+									<span class="d-none d-lg-inline-block ml-3 align-middle txt_size--med">Espacio y servicios premium <br> para modelos webcam en Bogotá</span>
 								</a>
 							</h1>
 

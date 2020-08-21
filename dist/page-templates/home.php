@@ -30,7 +30,7 @@ if ( is_front_page() ) {
 				</div>
 				<div class="paragraf mb-5 mr-lg-5 pr-lg-5">
 					<p>
-						Somos el espacio seguro que estabas buscando para iniciar o continuar tu carrera como modelo webcam. Cumple tus metas personales profesionalmente aprovechando todos los servicios y asesorías que te ofrecemos.
+						Somos el espacio de calidad que estabas buscando para iniciar o continuar tu carrera como modelo webcam. Cumple tus metas personales profesionalmente aprovechando todos los servicios y asesorías que te ofrecemos.
 					</p>
 				</div>
 				<div class="action">
@@ -149,7 +149,7 @@ if ( is_front_page() ) {
 		<div class="flex-lg-fill">
 			<div class="box-offer box-offer-max" style="background-image: url('<?php bloginfo('template_directory') ?>/images/png/rooms-001.jpg')">
 				<div class="title text-white p-5">
-					<h2>Un estudio de calidad <br> en Bogotá</h2>
+					<h2>Estudios de la más alta calidad <br> en Bogotá</h2>
 				</div>
 			</div>
 		</div>

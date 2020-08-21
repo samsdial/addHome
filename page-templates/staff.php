@@ -100,15 +100,13 @@ if ( is_front_page() ) {
 					<div class="box-staff-card flex-column flex-lg-row">
 						<div class="box-staff">
 							<ul class="js-slider min-slider">
-								<li class="">
-									<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-002.jpg" alt=""></figure>
-								</li>
-								<li class="">
-									<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-003.jpg" alt=""></figure>
-								</li>
-								<li class="">
-									<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-005.jpg" alt=""></figure>
-								</li>
+								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004.jpg" alt=""></figure> </li>
+								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004A.jpg" alt=""></figure> </li>
+								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004B.jpg" alt=""></figure> </li>
+								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004C.jpg" alt=""></figure> </li>
+								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004D.jpg" alt=""></figure> </li>
+								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004E.jpg" alt=""></figure> </li>
+
 							</ul>
 
 							<div class="card-body">
