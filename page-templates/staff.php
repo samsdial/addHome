@@ -21,133 +21,67 @@ if ( is_front_page() ) {
 <!-- EQUIPMENT -->
 <section class="staff">
 	<div class="container">
-		<div class="row">
-			<div class="col py-3 py-lg-5">
-				<div class="box-staff-intro py-3 py-lg-5 cl-primary">
-					<h2>Staff</h2>
-				</div>
-			</div>
-		</div>
+		<?php
+			while ( have_posts() ) {
+				the_post();
+				get_template_part( 'loop-templates/content', 'staff' );
+
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) {
+					comments_template();
+				}
+			}
+		?>
 		<div class="row pt-4">
 			<div class="col pt-5">
-				<div class="d-flex flex-column flex-lg-row">
-					<div class="box-staff-card flex-column flex-lg-row">
+				<div class="row no-gutters">
+				<?php if( have_rows('staff-list') ): ?>
+					<?php while( have_rows('staff-list') ): the_row();?>
+					<div class="col-12 col-lg-6">
 						<div class="box-staff">
-							<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-001.jpg" alt=""></figure>
-							<div class="card-body ">
-								<div class="title mb-3">
-									<h2>Equipo humano de monitoría</h2>
-								</div>
-								<div class="paragraf mb-5">
-									<p>
-										Talento humano calificativo y dedicado, dispuestos a resolver, enseñar y apoyarte.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box-staff-card flex-column flex-lg-row">
-						<div class="box-staff">
-							<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-002.jpg" alt=""></figure>
-							<div class="card-body ">
-								<div class="title mb-3">
-									<h2>Equipos de tecnología</h2>
-								</div>
-								<div class="paragraf mb-5">
-									<p>
-										¿Qué es de un equipo humano sin un buen equipo de tecnología? Nos hicimos esa pregunta un día y trajimos
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex flex-column flex-lg-row">
-					<div class="box-staff-card flex-column flex-lg-row">
-						<div class="box-staff">
-							<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-003.jpg" alt=""></figure>
-							<div class="card-body">
-								<div class="title mb-3">
-									<h2>Equipo humano de entrenamiento e instrumentos para crecimiento profesional</h2>
-								</div>
-								<div class="paragraf mb-5">
-									<p>
-										Crecer significa ser apoyado y guiado, por eso Casa ADD cuenta con excelentes coachs y tutores.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="box-staff-card flex-column flex-lg-row">
-						<div class="box-staff">
-
-
-							<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-005.jpg" alt=""></figure>
-							<div class="card-body ">
-								<div class="title mb-3">
-									<h2>Equipo humano de aseo</h2>
-								</div>
-								<div class="paragraf mb-5">
-									<p>
-										Un estudio impecable requiere un talento humano impecable y aquí los tienes.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="d-flex flex-column flex-lg-row">
-					<div class="box-staff-card flex-column flex-lg-row">
-						<div class="box-staff">
+							<?php if( have_rows('gallery') ): ?>
 							<ul class="js-slider min-slider">
-								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004.jpg" alt=""></figure> </li>
-								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004A.jpg" alt=""></figure> </li>
-								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004B.jpg" alt=""></figure> </li>
-								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004C.jpg" alt=""></figure> </li>
-								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004D.jpg" alt=""></figure> </li>
-								<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-004E.jpg" alt=""></figure> </li>
-
+								<?php while( have_rows('gallery') ): the_row();?>
+									<li class=""> <figure class="mb-4"><img class="img-fluid" src="<?php the_sub_field('image'); ?>" alt="staff"></figure> </li>
+								<?php endwhile; ?>
 							</ul>
-
+							<?php endif; ?>
 							<div class="card-body">
 								<div class="title mb-3">
-									<h2>Infraestructura de calidad (Cuartos, zonas comunes, zona adminitrativa)</h2>
+									<h2>
+										<?php the_sub_field('tilte'); ?>
+									</h2>
 								</div>
 								<div class="paragraf mb-5">
 									<p>
-										Espacios en constate renovación y zonas comunes a la altura.
+										<?php the_sub_field('paragraf'); ?>
 									</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="box-staff-card flex-column flex-lg-row">
-						<div class="box-staff">
-							<figure class="mb-4"><img class="img-fluid" src="<?php bloginfo('template_directory') ?>/images/png/staff-s-006.jpg" alt=""></figure>
-							<div class="card-body ">
-								<div class="title mb-3">
-									<h2>Equipo humano administrativo</h2>
-								</div>
-								<div class="paragraf mb-5">
-									<p>
-										Apoyo, integridad, legalidad, reponsabilidad y dedicación es el sello administrativo de Casa ADD.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
+					<?php endwhile; ?>
+				<?php endif; ?>
 				</div>
 			</div>
 		</div>
 		<div class="row py-5">
 			<div class="col text-center py-5">
 				<div class="subtitle  mb-3">
-					<h2 class="txt_size--med">¿Te interesa ser parte de nuestro gran equipo?</h2>
+					<h2 class="txt_size--med">
+						<?php the_field( 'closed_section' ); ?>
+					<!-- ¿Te interesa ser parte de nuestro gran equipo? -->
+					</h2>
 				</div>
 				<div class="action">
-					<a href="" class="link">
-						Trabaja con nosotros <i class="fa fa-angle-right"></i>
+				<?php $url_link = get_field( 'url_link' ); ?>
+					<?php if ( $url_link ) : ?>
+					<a href="<?php echo esc_url( $url_link); ?>" class="link">
+						<?php the_field( 'text_link' ); ?>
+						<i class="fa fa-angle-right"></i>
+						<!-- Trabaja con nosotros  -->
 					</a>
+				<?php endif; ?>
 				</div>
 			</div>
 		</div>

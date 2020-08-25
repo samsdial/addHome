@@ -25,31 +25,33 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="list mb-5">
 						<ul class="list-group">
 							<li>
-								<a href="" class="d-block link-footer mb-1">
+								<a href="<?php the_field('location_url', 'option'); ?>" class="d-block link-footer mb-1">
 									<span class="icon icon-location"></span>
-									<span class="align-bottom ml-2"> Bogota, Col</span>
+									<span class="align-bottom ml-2"> <?php the_field('location', 'option'); ?></span>
 								</a>
 							</li>
 							<li>
-								<a href="mailto:contacto@casaadd.com" target="_blank" class="d-block link-footer mb-1">
+								<a href="mailto:<?php the_field('email', 'option'); ?>" target="_blank" class="d-block link-footer mb-1">
 									<span class="icon icon-email"></span>
-									<span class="align-bottom ml-2"> contacto@casaadd.com</span>
+									<span class="align-bottom ml-2"><?php the_field('email', 'option'); ?></span>
 								</a>
 							</li>
 							<li>
-								<a href="https://api.whatsapp.com/send?phone=57350%205232208&text=&source=&data=&app_absent=" target="_blank" class="d-block link-footer mb-1">
+								<a href="https://api.whatsapp.com/send?phone=57<?php the_field('phone', 'option'); ?>&text=&source=&data=&app_absent=" target="_blank" class="d-block link-footer mb-1">
 									<span class="icon icon-phone"></span>
-									<span class="align-bottom ml-2"> 350 5232208</span>
+									<span class="align-bottom ml-2"><?php the_field('phone', 'option'); ?></span>
 								</a>
 							</li>
 						</ul>
 					</div>
 					<div class="term">
-						<a href="" class="link-footer underline d-block">
-							Términos y condiciones
+						<a href="<?php the_field('link_terminos', 'option'); ?>" class="link-footer underline d-block">
+							<?php the_field('texto_terminos', 'option'); ?>
+							<!-- Términos y condiciones -->
 						</a>
-						<a href="" class="link-footer underline d-block">
-							Politica de privacidad
+						<a href="<?php the_field('link_politicas', 'option'); ?>" class="link-footer underline d-block">
+						<?php the_field('texto_politicas', 'option'); ?>
+							<!-- Politica de privacidad -->
 						</a>
 					</div>
 				</div>
@@ -57,12 +59,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="col-12 col-md-4 col-lg-6 mb-4 mb-lg-0 align-self-end">
 				<ul class="list-group list-group-horizontal list-social justify-content-center">
 					<li>
-						<a href="https://www.facebook.com/casa.add/" target="_blank" class="d-block px-3 px-md-2">
+						<a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="d-block px-3 px-md-2">
 							<span class="icon icon-face"></span>
 						</a>
 					</li>
 					<li>
-						<a href="https://www.instagram.com/casa.add/" target="_blank" class="d-block px-3 px-md-2">
+						<a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="d-block px-3 px-md-2">
 							<span class="icon icon-insta"></span>
 						</a>
 					</li>
@@ -74,29 +76,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<h2>Instagram</h2>
 					</div>
 					<div class="list d-block mt-2">
+					<?php if( have_rows('insta_list', 'option') ): ?>
 						<ul class="list-group list-group-horizontal list-instagram">
+							<?php while( have_rows('insta_list', 'option') ): the_row();?>
 							<li>
-								<a href="" class="item">
+								<a href="<?php the_sub_field('url'); ?>" class="item">
 									<span class="image">
-										<img src="<?php bloginfo('template_directory') ?>/images/png/insta-01.jpg" alt="photo">
+										<img src="<?php the_sub_field('image'); ?>" alt="photo">
 									</span>
 								</a>
 							</li>
-							<li>
-								<a href="" class="item">
-									<span class="image">
-										<img src="<?php bloginfo('template_directory') ?>/images/png/insta-02.jpg" alt="photo">
-									</span>
-								</a>
-							</li>
-							<li>
-								<a href="" class="item">
-									<span class="image">
-										<img src="<?php bloginfo('template_directory') ?>/images/png/insta-03.jpg" alt="photo">
-									</span>
-								</a>
-							</li>
+						<?php endwhile; ?>
 						</ul>
+					<?php endif; ?>
 					</div>
 				</div>
 			</div>
@@ -108,15 +100,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="col-12">
 			<small class="cl--white box-copy">
 				<ul class="list-group list-group-horizontal">
-					<li class="list-group-item">
-						<div>
-							© 2020 <span class="cl-primary"> CASA ADD</span>
-							made with all right reserved
-						</div>
-					</li>
-					<li class="list-group-item">
-						Sitio realizado por <a href="https://iccana.com/" target="_blank" class="">Agencia Iccana</a>
-					</li>
+					<?php the_field('html_copy', 'option'); ?>
 				</ul>
 			</small>
 		</div>

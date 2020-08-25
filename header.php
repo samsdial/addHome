@@ -88,12 +88,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<div class="d-block d-md-none w-100 text-center">
 					<ul class="list-group list-group-horizontal list-social justify-content-center">
 						<li>
-							<a href="https://www.facebook.com/casa.add/" target="_blank" class="d-block px-3 px-md-2">
+							<a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="d-block px-3 px-md-2">
 								<span class="icon icon-face"></span>
 							</a>
 						</li>
 						<li>
-							<a href="https://www.instagram.com/casa.add/" target="_blank" class="d-block px-3 px-md-2">
+							<a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="d-block px-3 px-md-2">
 								<span class="icon icon-insta"></span>
 							</a>
 						</li>

@@ -48,4 +48,17 @@ $(document).ready(function () {
 	});
 	//js-slider
 	$('.js-slider').slick();
+	$('.js-home-slider').slick({
+		dots: true,
+		arrows: false,
+		fade: true,
+		cssEase: 'linear'
+	});
+	//js-slider-offer
+	$('.js-slider-offer').slick({
+		dots: false,
+		arrows: true,
+		fade: true,
+		cssEase: 'linear'
+	});
 });

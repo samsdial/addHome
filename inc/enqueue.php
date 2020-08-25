@@ -127,8 +127,8 @@ add_action( 'wp_enqueue_scripts', 'understrap_scripts' );
 if ( function_exists('acf_add_options_page') ) {
 
     $page = acf_add_options_page(array(
-        'page_title'    => __('Trabaja con Nosotros', 'WorkIn'),
-        'menu_title'    => __('Trabaja con Nosotros', 'WorkIn'),
+        'page_title'    => __('Prefooter', 'WorkIn'),
+        'menu_title'    => __('Prefooter', 'WorkIn'),
         'menu_slug'     => 'theme-work-in',
         'capability'    => 'manage_options',
         'redirect'  => false,
@@ -136,39 +136,10 @@ if ( function_exists('acf_add_options_page') ) {
     ));
 
     $page = acf_add_options_page(array(
-        'page_title'    => __('Configuration General Home', 'WebSite'),
-        'menu_title'    => __('Home WebSite', 'WebSite'),
+        'page_title'    => __('Configuración General', 'WebSite'),
+        'menu_title'    => __('Información General website', 'WebSite'),
         'menu_slug'     => 'theme-general-settings',
         'capability'    => 'manage_options',
         'redirect'  => false
-    ));
-
-    acf_add_options_sub_page(array(
-        'page_title' => __('Configuracion Slider (Principal)', 'WebSite'),
-        'menu_title' => __('Configuracion Slider (Principal)', 'WebSite'),
-        'menu_slug' => 'theme-slider-main-configuration',
-        'capability' => 'manage_options',
-        'parent_slug' => 'theme-general-settings',
-        'position' => false,
-        'icon_url' => false,
-    ));
-
-    acf_add_options_sub_page(array(
-        'page_title' => __('Copyright', 'WebSite'),
-        'menu_title' => __('Copyright Info', 'WebSite'),
-        'menu_slug' => 'theme-service-configuration',
-        'capability' => 'manage_options',
-        'parent_slug' => 'theme-general-settings',
-        'position' => false,
-        'icon_url' => false,
-    ));
-    acf_add_options_sub_page(array(
-        'page_title' => __('Configuracion Nosotros', 'WebSite'),
-        'menu_title' => __('Configuracion Nosotros', 'WebSite'),
-        'menu_slug' => 'theme-service',
-        'capability' => 'manage_options',
-        'parent_slug' => 'theme-general-settings',
-        'position' => false,
-        'icon_url' => false,
     ));
 }

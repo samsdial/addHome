@@ -27,17 +27,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 		<div class="row">
-				<div class="col py-5">
-					<div class="title-intro cl-primary pt-5 mt-3">
-						<h2>Bitacora De viaje webcam</h2>
+			<div class="col pt-5 py-lg-5">
+				<div class="box-blog pt-5 py-lg-5">
+					<div class="title-intro cl-primary mb-5">
+						<h2>
+							<?php the_field('blog_title_in', 'option'); ?>
+						</h2>
 					</div>
-					<div class="paragraf pb-5 mt-3">
-						<p class="">
-							Acá encuentras información, noticias y experiencias que te guiaran en tu proceso personal y profesional
+					<div class="paragraf">
+						<p>
+							<?php the_field('blog_paragraf_in', 'option'); ?>
 						</p>
 					</div>
 				</div>
 			</div>
+		</div>
 		<div class="row">
 
 

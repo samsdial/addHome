@@ -124,6 +124,21 @@
 					z-index: 2
 					h2
 						text-shadow: $txt-shadow
+				.gallery
+					display: inline-block
+					position: absolute
+					width: 100%
+					top: 0
+					left: 0
+					right: 0
+					.slick-next
+						right: 5px !important
+					.slick-prev
+						left: 5px !important
+					.slick-next:before,
+					.slick-prev:before
+						color: $white
+
 			&-min
 				height: 350px
 				+MQMAX(SL)
@@ -253,6 +268,10 @@
 			right: -15%
 		+MQ(XL)
 			right: 0
+		img
+			max-width: 100%
+    		height: auto
+
 //Staff
 .box
 	&-staff
@@ -307,6 +326,7 @@
 		background: $white
 		padding: $spacers5
 		width: 70%
+		min-height: 900px
 		+MQMAX(SL)
 			width: 100%
 
