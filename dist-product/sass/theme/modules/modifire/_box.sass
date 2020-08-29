@@ -1,29 +1,95 @@
+.box-shadow
+	box-shadow: $boxShadow
+	&-top
+		box-shadow: $boxShadowTop
+//BOX BANNER
+.banner
+	position: relative
+	.whatsaap
+		position: absolute
+		bottom: 5%
+		right: 50%
+		display: none
+		+MQ(L)
+			display: block
+	.box-social
+		position: absolute
+		left: -125px
+		top: 50%
+		transform: rotate(-90deg)
+		display: none
+		justify-content: center
+		+MQ(L)
+			display: flex
+		&-list
+			display: flex
+			align-items: center
+			li
+				margin: 0 15px
+				a
+					color: $white
+					font-size: $h3-font-size
+					text-transform: uppercase
+					span.icon
+						transform: rotate(90deg)
+						margin: 0 15px
+// PREFOOTER
+.box-prefotter
+	// BANNER
+	min-height: 655px
+	&-info
+		.title
+			h2,
+			h1
+				font-size: $h1-font-size
+				+MQMAX(S)
+					font-size: rem-calc(32px)
+	figure
+		display: inline-block
+		background: $white
+		+MQ(L)
+			padding: $spacers5
 .box
 	&-banner
+		min-height: 800px
 		&-info
-			padding-left: 300px
-			padding-right: 100px
+			padding: 0 $spacers5
+			+MQ(L)
+				padding-left: 15%
+				padding-right: 100px
 			.title
 				h2,
 				h1
-					font-size: 75px
+					font-size: $text-large
 			.paragraf
 				p
 					font-size: $text-bigger
+					+MQMAX(SL)
+						font-size: $font-size-base
 		figure
 			display: inline-block
 			background: $white
-			padding: $spacers5
+			+MQ(L)
+				padding: $spacers5
 
-
+//BOX RESULT
 .box
 	&-result
+		margin: 0 $spacers4
+		+MQMAX(SL)
+			margin: 0 rem-calc(52px)
 		&-intro
 			h2
 				font-size: $h1-font-size
+		.paragraf
+			text-align: justify
+			+MQMAX(SL)
+				text-align: center
 		.title
 			h2
 				font-size: $h4-font-size
+		figure img
+			height: 160px
 //BOX OFFERT
 .box
 	&-offer
@@ -36,28 +102,73 @@
 				background-position: center center
 				background-repeat: no-repeat
 				background-size: cover
+				position: relative
+				&::after
+					+MQMAX(SL)
+						content: ""
+						position: absolute
+						width: 100%
+						height: 100%
+						display: block
+						background: rgba(0,0,0,.5)
+						top: 0
+						left: 0
+
+			&-min,
 			&-max
-				height: 900px
+				height: 700px
 				+MQMAX(SL)
-					height: 450px
+					height: 250px
 				.title
+					position: relative
+					z-index: 2
 					h2
 						text-shadow: $txt-shadow
+				.gallery
+					display: inline-block
+					position: absolute
+					width: 100%
+					top: 0
+					left: 0
+					right: 0
+					.slick-next
+						right: 5px !important
+					.slick-prev
+						left: 5px !important
+					.slick-next:before,
+					.slick-prev:before
+						color: $white
+
 			&-min
-				height: 450px
+				height: 350px
+				+MQMAX(SL)
+					height: 250px
 		.title
 			h2
-				font-size: $h2-font-size
+				font-size: rem-calc(29px)
 //BOX SLIDER
 .box
 	&-benefit
 		&-intro
 			h2
 				font-size: $h1-font-size
+		&.slick-dotted.slick-slider
+			margin-bottom: 60px
+		.slick-dots
+			bottom: -45px
+			li
+				margin: -11px 5px
+				button:before
+					font-size: 55px
 		.card
 			border: none
 			border-radius: $card-site-border-radius
 			margin: 0 $spacers3
+			.card-body
+				min-height: 250px
+			.card-title
+				font-weight: 900
+				font-size: $h5-font-size
 			.card-img-top
 				border-top-left-radius: $card-site-border-radius
 				border-top-right-radius: $card-site-border-radius
@@ -65,15 +176,192 @@
 //BOX SLIDER
 .box
 	&-blog
+		&-card
+			> div
+				width: 50%
+				+MQMAX(SL)
+					width: 100%
 		&-info
-			padding: $spacers5
+			padding: $spacers5 0
+			+MQ(SL)
+				padding: $spacers5
+			&.text-right
+				.date
+					vertical-align: middle
+					&::before
+						content: ""
+						display: inline-block
+						width: 60px
+						height: 3px
+						margin: 0 $spacers6
+						background: $Primary
+					&::after
+						display: none
 		.date
-			.day
-				font-size: $h1-font-size
-				color: $Primary
+			vertical-align: middle
+			&::after
+				content: ""
+				display: inline-block
+				width: 60px
+				height: 3px
+				margin: 0 $spacers6
+				background: red
+			.day,
 			.info
-				font-size: $h4-font-size
-				color: $gainsboro
+				display: inline-block
+				vertical-align: initial
+			.day
+				font-size: 56px
+				color: $Primary
+				vertical-align: middle
+			.info
+				font-size: $text-tiny
+				color: $silver
 			.title
 				color: $black
 				font-size: $h2-font-size
+
+// BOX About
+.box
+	&-about
+		&-intro
+			h2,
+			h1
+				font-size: rem-calc(63px)
+		&-prefotter
+			h2
+				font-size: $h4-font-size
+
+	&-about
+		.subtitle
+			margin-bottom: rem-calc(35px)
+
+			h2
+				font-size: $h3-font-size
+				line-height: 1.5
+		.paragraf
+			p
+				font-weight: normal
+				text-align: justify
+				font-size: $h6-font-size
+.about-placeholder
+	position: relative
+	+MQ(SL)
+		overflow: hidden
+	.container .row
+		+MQ(SL)
+			min-height: 420px
+	.paragraf
+		p
+			text-align: justify
+	figure
+		+MQMAX(SL)
+			display: block
+			width: 100%
+			max-height: 550px
+			overflow: hidden
+		+MQ(SL)
+			position: absolute
+			right: -45%
+			top: 0
+		+MQ(L)
+			right: -15%
+		+MQ(XL)
+			right: 0
+		img
+			max-width: 100%
+    		height: auto
+
+//Staff
+.box
+	&-staff
+		&-card
+			width: 100%
+			+MQ(L)
+				width: 50%
+		&-intro
+			h2
+				font-size: rem-calc(45px)
+		.card-body
+			width: 100%
+			+MQ(L)
+				width: 70%
+		.title
+			h2
+				font-size: $h4-font-size
+		.paragraf
+			p
+				font-weight: 100
+				font-size: $h6-font-size
+		figure
+			border-radius: $card-site-radius
+			.img-fluid
+				border-radius: $card-site-radius
+//work
+.box-work
+	.title
+		h2
+			font-size: rem-calc(50px)
+	&-info
+		+MQ(XL)
+			padding: 0 rem-calc(200px)
+			width: 76%
+		+MQ(L)
+			padding: 0 rem-calc(60px)
+			width: 53%
+		+MQMAX(L)
+			padding: 0 rem-calc(25px)
+			width: 53%
+		+MQMAX(SL)
+			padding: 0 rem-calc(70px)
+			width: 85%
+		+MQMAX(M)
+			padding: 0 rem-calc(38px)
+			width: 100%
+		.paragraf
+			p
+				font-size: $h6-font-size
+	figure
+		display: inline-block
+		background: $white
+		padding: $spacers5
+		width: 70%
+		min-height: 900px
+		+MQMAX(SL)
+			width: 100%
+
+//Begin
+.box-begin
+	vertical-align: top
+	.card-body
+
+
+		+MQMAX(SL)
+			width: 55%
+		@media (max-width:  $phablet)
+			width: 100%
+		.title
+			h2
+				font-size: $h5-font-size
+	figure
+		height: 85px
+	.card-body,
+	figure
+		+MQMAX(SL)
+			vertical-align: top
+			display: inline-block
+		@media (max-width:  $phablet)
+			display: block
+
+.box-copy
+	ul
+		li
+			background: transparent
+			border: none
+			padding: 0
+			&:first-child
+				padding-right: $spacer
+				border-right: 1px solid $white
+			&:last-child
+				padding-left: $spacer
+

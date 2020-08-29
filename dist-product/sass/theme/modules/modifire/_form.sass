@@ -1,5 +1,16 @@
 form
+	label span
+		font-size: $h6-font-size
+	textarea.form-control,
 	input.form-control
 		border: 0
-		background-color: $gainsboro
-		+fz(1)
+		background-color: $white
+		height: 45px
+		border-radius: 22px
+		font-size: $h6-font-size
+		box-shadow: $shadow
+		color: $silver
+		&::placeholder
+			color: $silver
+	textarea.form-control
+		height: auto

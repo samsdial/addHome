@@ -26,22 +26,22 @@ if ( ! function_exists( 'understrap_add_site_info' ) ) {
 		$the_theme = wp_get_theme();
 
 		$site_info = sprintf(
-			'<a href="%1$s">%2$s</a><span class="sep"> | </span>%3$s(%4$s)',
-			esc_url( __( 'http://wordpress.org/', 'understrap' ) ),
+			'<a href="%1$s" class="cl-primary">%2$s</a><span class="sep"> | </span>%3$s(%4$s)',
+			esc_url( __( '/', 'understrap' ) ),
 			sprintf(
 				/* translators: WordPress */
-				esc_html__( 'Proudly powered by %s', 'understrap' ),
-				'WordPress'
+				esc_html__( '© 2020 %s', 'understrap' ),
+				'CASAADD'
 			),
 			sprintf( // WPCS: XSS ok.
 				/* translators: 1: Theme name, 2: Theme author */
-				esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ),
+				esc_html__( 'Sitio realizado por Agencia Iccana', 'understrap' ),
 				$the_theme->get( 'Name' ),
-				'<a href="' . esc_url( __( 'http://understrap.com', 'understrap' ) ) . '">understrap.com</a>'
+				'<a href="' . esc_url( __( 'http://iccana.com', 'Sitio realizado por Agencia Iccana' ) ) . '">understrap.com</a>'
 			),
 			sprintf( // WPCS: XSS ok.
 				/* translators: Theme version */
-				esc_html__( 'Version: %1$s', 'understrap' ),
+				esc_html__( '', 'understrap' ),
 				$the_theme->get( 'Version' )
 			)
 		);

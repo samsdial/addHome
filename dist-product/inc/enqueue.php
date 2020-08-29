@@ -32,3 +32,23 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 } // End of if function_exists( 'understrap_scripts' ).
 
 add_action( 'wp_enqueue_scripts', 'understrap_scripts' );
+
+if ( function_exists('acf_add_options_page') ) {
+
+    $page = acf_add_options_page(array(
+        'page_title'    => __('Prefooter', 'WorkIn'),
+        'menu_title'    => __('Prefooter', 'WorkIn'),
+        'menu_slug'     => 'theme-work-in',
+        'capability'    => 'manage_options',
+        'redirect'  => false,
+        'rewrite' => array( 'slug' => 'about' ),
+    ));
+
+    $page = acf_add_options_page(array(
+        'page_title'    => __('Configuración General', 'WebSite'),
+        'menu_title'    => __('Información General website', 'WebSite'),
+        'menu_slug'     => 'theme-general-settings',
+        'capability'    => 'manage_options',
+        'redirect'  => false
+    ));
+}

@@ -61,4 +61,14 @@ $(document).ready(function () {
 		fade: true,
 		cssEase: 'linear'
 	});
+	$('#myModal').modal('show')
 });
+
+// let n1 = 11
+// let n2 = 22
+
+// if ( n1 > n2){
+// 	console.log('n1 es mayor')
+// } else {
+// 	console.log('n2 es mayor')
+// }

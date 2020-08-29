@@ -18,6 +18,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -46,14 +47,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php if ( is_front_page() && is_home() ) : ?>
 
 							<h1 class="navbar-brand mb-0">
-								<a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
-									<span class="logo logo_site"></span>
+								<a class="align-middle" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url">
+									<span class="logo logo_site d-inline-block align-middle"></span>
+									<span class="d-none d-lg-inline-block ml-3 align-middle txt_size--med">Espacio y servicios premium <br> para modelos webcam en Bogotá</span>
 								</a>
 							</h1>
 
 						<?php else : ?>
 
-							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a>
+							<a class="navbar-brand" rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><span class="logo logo_site"></span><span class="d-none d-lg-inline-block ml-3 align-middle txt_size--min">Espacio y servicios premium <br> para modelos webcam en Bogotá</span></a>
 
 						<?php endif; ?>
 
@@ -63,9 +65,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 					}
 					?>
 					<!-- end custom logo -->
-
+				<span class="d-inline-block d-md-none">MENÚ</span>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'understrap' ); ?>">
-					<span class="navbar-toggler-icon"></span>
+					<span class="navbar-toggler-icon my-toggler"></span>
 				</button>
 
 				<!-- The WordPress Menu goes here -->
@@ -83,6 +85,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 					)
 				);
 				?>
+				<div class="d-block d-md-none w-100 text-center">
+					<ul class="list-group list-group-horizontal list-social justify-content-center">
+						<li>
+							<a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="d-block px-3 px-md-2">
+								<span class="icon icon-face"></span>
+							</a>
+						</li>
+						<li>
+							<a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="d-block px-3 px-md-2">
+								<span class="icon icon-insta"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			<?php if ( 'container' === $container ) : ?>
 			</div><!-- .container -->
 			<?php endif; ?>

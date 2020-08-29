@@ -17,86 +17,78 @@ $container = get_theme_mod( 'understrap_container_type' );
 <footer class="py-5">
 	<div class="container py-5">
 		<div class="row">
-			<div class="col-md-3 align-self-start">
+			<div class="col-12 col-md-4 col-lg-3 mb-4 mb-lg-0 align-self-start">
 				<div class="box box-contact">
 					<div class="title mb-4">
-						<h2>Contacto</h2>
+						<h2>Contáctanos</h2>
 					</div>
-					<div class="list mb-3">
+					<div class="list mb-5">
 						<ul class="list-group">
 							<li>
-								<a href="" class="d-block link mb-1">
-									<span class="icon"></span>
-									<span> Lorem, ipsum dolor.</span>
+								<a href="<?php the_field('location_url', 'option'); ?>" class="d-block link-footer mb-1">
+									<span class="icon icon-location"></span>
+									<span class="align-bottom ml-2"> <?php the_field('location', 'option'); ?></span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="d-block link mb-1">
-									<span class="icon"></span>
-									<span> Lorem, ipsum dolor.</span>
+								<a href="mailto:<?php the_field('email', 'option'); ?>" target="_blank" class="d-block link-footer mb-1">
+									<span class="icon icon-email"></span>
+									<span class="align-bottom ml-2"><?php the_field('email', 'option'); ?></span>
 								</a>
 							</li>
 							<li>
-								<a href="" class="d-block link mb-1">
-									<span class="icon"></span>
-									<span> 777 888 00</span>
+								<a href="https://api.whatsapp.com/send?phone=57<?php the_field('phone', 'option'); ?>&text=&source=&data=&app_absent=" target="_blank" class="d-block link-footer mb-1">
+									<span class="icon icon-phone"></span>
+									<span class="align-bottom ml-2"><?php the_field('phone', 'option'); ?></span>
 								</a>
 							</li>
 						</ul>
 					</div>
 					<div class="term">
-						<a href="" class="link d-block">
-							Términos y condiciones
+						<a href="<?php the_field('link_terminos', 'option'); ?>" class="link-footer underline d-block">
+							<?php the_field('texto_terminos', 'option'); ?>
+							<!-- Términos y condiciones -->
 						</a>
-						<a href="" class="link d-block">
-							Politica de privacidad
+						<a href="<?php the_field('link_politicas', 'option'); ?>" class="link-footer underline d-block">
+						<?php the_field('texto_politicas', 'option'); ?>
+							<!-- Politica de privacidad -->
 						</a>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-6 align-self-end">
+			<div class="col-12 col-md-4 col-lg-6 mb-4 mb-lg-0 align-self-end">
 				<ul class="list-group list-group-horizontal list-social justify-content-center">
 					<li>
-						<a href="" class="d-block px-3 px-md-2">
-							<span class="icon icon_face"></span>
+						<a href="<?php the_field('facebook', 'option'); ?>" target="_blank" class="d-block px-3 px-md-2">
+							<span class="icon icon-face"></span>
 						</a>
 					</li>
 					<li>
-						<a href="" class="d-block px-3 px-md-2">
-							<span class="icon icon_insta"></span>
+						<a href="<?php the_field('instagram', 'option'); ?>" target="_blank" class="d-block px-3 px-md-2">
+							<span class="icon icon-insta"></span>
 						</a>
 					</li>
 				</ul>
 			</div>
-			<div class="col-md-3 align-self-start">
+			<div class="col-12 col-md-4 col-lg-3 mb-4 mb-lg-0 align-self-start">
 			 	<div class="box box-instagram">
 					<div class="title mb-4">
 						<h2>Instagram</h2>
 					</div>
 					<div class="list d-block mt-2">
+					<?php if( have_rows('insta_list', 'option') ): ?>
 						<ul class="list-group list-group-horizontal list-instagram">
+							<?php while( have_rows('insta_list', 'option') ): the_row();?>
 							<li>
-								<a href="" class="item">
+								<a href="<?php the_sub_field('url'); ?>" class="item">
 									<span class="image">
-										<img src="https://picsum.photos/70/" alt="photo">
+										<img src="<?php the_sub_field('image'); ?>" alt="photo">
 									</span>
 								</a>
 							</li>
-							<li>
-								<a href="" class="item">
-									<span class="image">
-										<img src="https://picsum.photos/70/" alt="photo">
-									</span>
-								</a>
-							</li>
-							<li>
-								<a href="" class="item">
-									<span class="image">
-										<img src="https://picsum.photos/70/" alt="photo">
-									</span>
-								</a>
-							</li>
+						<?php endwhile; ?>
 						</ul>
+					<?php endif; ?>
 					</div>
 				</div>
 			</div>
@@ -106,7 +98,11 @@ $container = get_theme_mod( 'understrap_container_type' );
 <footer class="py-4 border_top">
 	<div class="container">
 		<div class="col-12">
-			<small class="cl--white"><?php understrap_site_info(); ?></small>
+			<small class="cl--white box-copy">
+				<ul class="list-group list-group-horizontal">
+					<?php the_field('html_copy', 'option'); ?>
+				</ul>
+			</small>
 		</div>
 	</div>
 </footer>

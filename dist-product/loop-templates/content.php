@@ -10,9 +10,10 @@ defined( 'ABSPATH' ) || exit;
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
 	<header class="entry-header">
-
+		<a href="#" class="">
+			Estilo de vida
+		</a>
 		<?php
 		the_title(
 			sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
@@ -22,10 +23,16 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 
-			<div class="entry-meta">
+			<div class="entry-meta mb-4">
+				<i class="fa fa-calendar"></i>
 				<?php understrap_posted_on(); ?>
+				<span class="mx-2">
+					<i class="fa fa-heart"></i><span>152 Likes</span>
+				</span>
+				<span class="mx-2">
+					<i class="fa fa-comment"></i><span>210 Coments</span>
+				</span>
 			</div><!-- .entry-meta -->
-
 		<?php endif; ?>
 
 	</header><!-- .entry-header -->
@@ -46,11 +53,4 @@ defined( 'ABSPATH' ) || exit;
 		?>
 
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		<?php understrap_entry_footer(); ?>
-
-	</footer><!-- .entry-footer -->
-
 </article><!-- #post-## -->

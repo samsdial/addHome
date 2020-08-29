@@ -34,7 +34,7 @@ if ( post_password_required() ) {
 			if ( 1 === (int) $comments_number ) {
 				printf(
 					/* translators: %s: post title */
-					esc_html_x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'understrap' ),
+					esc_html_x( 'Comentarios &ldquo;%s&rdquo;', 'comments title', 'understrap' ),
 					'<span>' . get_the_title() . '</span>'
 				);
 			} else {
@@ -79,7 +79,7 @@ if ( post_password_required() ) {
 
 		<?php endif; // Check for comment navigation. ?>
 
-		<ol class="comment-list">
+		<ol class="comment-list list-false">
 
 			<?php
 			wp_list_comments(

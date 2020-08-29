@@ -12,7 +12,7 @@ defined( 'ABSPATH' ) || exit;
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
-
+		<?php understrap_entry_footer(); ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 		<div class="entry-meta">
@@ -40,10 +40,26 @@ defined( 'ABSPATH' ) || exit;
 
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-
-		<?php understrap_entry_footer(); ?>
-
+	<footer class="entry-footer pt-5 pb-4">
+		<div class="d-lg-flex align-items-center">
+			<div class="w-100 mb-3 mb-lg-0">
+				<i class="fa fa-bookmark cl-primary"></i> <span>Blog,</span>
+				<?php understrap_entry_footer(); ?>
+			</div>
+			<div class="flex-shrink-1">
+				<ul class="list-shared list-group list-group-horizontal-sm align-items-end">
+					<li class="list-group-item"><span class="text-uppercase">Compartir</span></li>
+					<li class="list-group-item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+					<li class="list-group-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					<li class="list-group-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li class="list-group-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
 	</footer><!-- .entry-footer -->
-
+	<div class="row">
+		<div class="col pb-5 ">
+			<div class="line"></div>
+		</div>
+	</div>
 </article><!-- #post-## -->

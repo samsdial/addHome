@@ -26,7 +26,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<main class="site-main" id="main">
 
 				<header class="page-header author-header">
-
 					<?php
 					if ( get_query_var( 'author_name' ) ) {
 						$curauth = get_user_by( 'slug', get_query_var( 'author_name' ) );
