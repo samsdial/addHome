@@ -42,6 +42,14 @@ if ( function_exists('acf_add_options_page') ) {
         'capability'    => 'manage_options',
         'redirect'  => false,
         'rewrite' => array( 'slug' => 'about' ),
+	));
+	$page = acf_add_options_page(array(
+        'page_title'    => __('PopUp', 'Modal'),
+        'menu_title'    => __('PopUp', 'Modal'),
+        'menu_slug'     => 'theme-modal-in',
+        'capability'    => 'manage_options',
+        'redirect'  => false,
+        'rewrite' => array( 'slug' => 'modal' ),
     ));
 
     $page = acf_add_options_page(array(

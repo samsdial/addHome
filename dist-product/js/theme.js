@@ -7895,4 +7895,16 @@ $(document).ready(function () {
     fade: true,
     cssEase: 'linear'
   });
+  $('.js-slider-work').slick({
+    dots: false,
+    arrows: false,
+    fade: true,
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 20000,
+    infinite: true
+  });
+  $('#js-modal-mensaje').click(function () {
+    $('#js-mesaje').removeClass('d-none');
+  });
 });

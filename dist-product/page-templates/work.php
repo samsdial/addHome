@@ -22,13 +22,19 @@ if ( is_front_page() ) {
 <section class="w-100 work">
 	<!-- ***CONTAINER*** -->
 		<div class="box-work d-flex flex-column flex-lg-row">
-				<figure class="flex-column flex-lg-row">
-					<!-- <img src="<?php // bloginfo('template_directory') ?>/images/png/work.jpg"  alt=""> -->
-					<?php $imagen_caracteristica = get_field( 'imagen_caracteristica' ); ?>
-					<?php if ( $imagen_caracteristica ) : ?>
-						<img src="<?php echo esc_url( $imagen_caracteristica['url'] ); ?>" class="img-fluid" style="width: 1800px;" alt="<?php echo esc_attr( $imagen_caracteristica['alt'] ); ?>" />
+				<div class="flex-column flex-lg-row w-50">
+				<?php if( have_rows('imagen_caracteristica') ): ?>
+				<ul class="js-slider-work">
+				<?php while( have_rows('imagen_caracteristica') ): the_row();?>
+						<li>
+							<figure>
+								<img src="<?php the_sub_field('image'); ?>" class="img-fluid w-100" alt="">
+							</figure>
+						</li>
+					<?php endwhile; ?>
+					</ul>
 					<?php endif; ?>
-				</figure>
+				</div>
 				<div class="box-work-info align-self-center flex-column flex-lg-row">
 					<?php
 						while ( have_posts() ) {

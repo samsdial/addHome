@@ -325,7 +325,7 @@
 		display: inline-block
 		background: $white
 		padding: $spacers5
-		width: 70%
+		width: 100%
 		min-height: 900px
 		+MQMAX(SL)
 			width: 100%
@@ -365,3 +365,31 @@
 			&:last-child
 				padding-left: $spacer
 
+// Custom sitemap
+//results
+.error-404.not-found,
+.no-results.not-found
+	.page-header
+		margin-bottom: $spacers2
+		h1
+			font-size: $h1-font-size
+			color: $Primary
+	.page-content
+		p
+			margin-bottom: $spacers2
+		form
+			input
+				border: 1px solid $silver
+				background-color: #fff
+				height: 45px
+				border-radius: 0px
+				font-size: 1.0625rem
+				box-shadow: none
+				color: silver
+			.input-group
+				.input-group-append
+					position: absolute
+					top: 28%
+					display: inherit
+					right: 15px
+					color: $gray

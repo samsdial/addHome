@@ -14,6 +14,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
+
+
 <footer class="py-5">
 	<div class="container py-5">
 		<div class="row">

@@ -22,7 +22,7 @@ input[type=submit]
 .btn
 	border: none
 	box-shadow: none
-	border-radius: 25px
+	border-radius: rem-calc(25px)
 	font-size: $font-size-base
 	font-family: $sf
 	text-transform: uppercase
@@ -36,7 +36,7 @@ input[type=submit]
 		color: $white
 		background-color: $Primary !important
 		padding: $spacers3 $spacers6
-		border-radius: 50px
+		border-radius: rem-calc(50px)
 		letter-spacing: .2rem
 		+press
 			color: $white
@@ -45,7 +45,7 @@ input[type=submit]
 		background-color: transparent
 		border: 2px solid $white
 		padding: $spacers3 $spacers5
-		border-radius: 50px
+		border-radius: rem-calc(50px)
 		letter-spacing: .2rem
 		+press
 			background-color: transparent
@@ -54,7 +54,37 @@ input[type=submit]
 		color: $white
 		background-color: $Primary
 		padding: $spacers3 $spacers6
-		border-radius: 50px
+		border-radius: rem-calc(50px)
 		letter-spacing: .2rem
 		+press
 			color: $white
+.btn
+	&-modal
+		color: $white
+		background-color: transparent
+		padding: $spacers3 $spacers6
+		border-radius: 0
+		vertical-align: middle
+		span
+			vertical-align: middle
+		span.checking
+			background-color: $white
+			border-radius: rem-calc(6px)
+			margin-left: 5px
+			display: inline-block
+			padding: $spacers1 $spacers1
+			box-shadow: $shadow
+			&:before
+				font: normal normal normal 14px/1 FontAwesome !important
+				color: $white
+				font-size: rem-calc(20px) !important
+				text-shadow: 0px 7px 18px -2px rgba(0,0,0,0.31)
+				content: $fa-var-check
+				transition: all 0.3s ease-in-out
+		+press
+			color: $white
+			//text-shadow: $txt-shadow
+			span.checking
+				box-shadow: none
+				&:before
+					color: $Primary
