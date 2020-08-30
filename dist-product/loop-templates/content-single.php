@@ -41,6 +41,7 @@ defined( 'ABSPATH' ) || exit;
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer pt-5 pb-4">
+	<?php wp_link_pages(); ?>
 		<div class="d-lg-flex align-items-center">
 			<div class="w-100 mb-3 mb-lg-0">
 				<i class="fa fa-bookmark cl-primary"></i> <span>Blog,</span>
@@ -49,7 +50,7 @@ defined( 'ABSPATH' ) || exit;
 			<div class="flex-shrink-1">
 				<ul class="list-shared list-group list-group-horizontal-sm align-items-end">
 					<li class="list-group-item"><span class="text-uppercase">Compartir</span></li>
-					<li class="list-group-item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+					<li class="list-group-item"><a href="https://www.facebook.com/share.php?u=$<?php the_title(); ?>&t=$<?php the_title(); ?>"><i class="fa fa-facebook-f"></i></a></li>
 					<li class="list-group-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
 					<li class="list-group-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
 					<li class="list-group-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>

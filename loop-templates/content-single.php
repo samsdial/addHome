@@ -49,10 +49,10 @@ defined( 'ABSPATH' ) || exit;
 			<div class="flex-shrink-1">
 				<ul class="list-shared list-group list-group-horizontal-sm align-items-end">
 					<li class="list-group-item"><span class="text-uppercase">Compartir</span></li>
-					<li class="list-group-item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
-					<li class="list-group-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-					<li class="list-group-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li class="list-group-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+					<li class="list-group-item"><a target="_blank" href="https://www.facebook.com/share.php?u=$<?php $enlace = get_permalink(); echo $enlace; ?>&t=$<?php the_title( ); ?>"><i class="fa fa-facebook-f"></i></a></li>
+					<!-- <li class="list-group-item"><a target="_blank" href="https://plus.google.com/share?url="><i class="fa fa-google-plus"></i></a></li> -->
+					<li class="list-group-item"><a target="_blank" href="https://twitter.com/share?url=$<?php the_permalink(); ?>&text=$<?php the_title( ); ?>&via=casadd"><i class="fa fa-twitter"></i></a></li>
+					<li class="list-group-item"><a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=<?php the_permalink(); ?>"><i class="fa fa-linkedin"></i></a></li>
 				</ul>
 			</div>
 		</div>

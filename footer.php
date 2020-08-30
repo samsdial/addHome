@@ -15,25 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div id="myModal" class="modal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 <footer class="py-5">
 	<div class="container py-5">
 		<div class="row">

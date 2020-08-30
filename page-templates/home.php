@@ -439,4 +439,74 @@ if ( is_front_page() ) {
 </section>
 <!-- ***PREFotter END*** -->
 <?php
+  # Iniciando la variable de control que permitirá mostrar o no el modal
+  $exibirModal = false;
+  # Verificando si existe o no la cookie
+  if(!isset($_COOKIE["mostrarModal"]))
+  {
+    # Caso no exista la cookie entra aquí
+    # Creamos la cookie con la duración que queramos
+
+    //$expirar = 360; // muestra cada 1 hora
+    //$expirar = 10800; // muestra cada 3 horas
+    //$expirar = 21600; //muestra cada 6 horas
+    $expirar = 43200; //muestra cada 12 horas
+    //$expirar = 86400;  // muestra cada 24 horas
+    setcookie('mostrarModal', 'SI', (time() + $expirar)); // mostrará cada 12 horas.
+    # Ahora nuestra variable de control pasará a tener el valor TRUE (Verdadero)
+    $exibirModal = true;
+  }
+?>
+<!-- ***MODAL*** -->
+<?php if ( get_field( 'active_modal' ) == 1 ) : ?>
+	<?php // echo 'true'; ?>
+	<div id="myModal" class="modal modal-open" tabindex="-1">
+		<div class="modal-dialog modal-xl modal-dialog-centered">
+			<div class="modal-content" style="background-image: url('<?php the_field('modal_img', 'option'); ?>')">
+			<div class="modal-body">
+				<div class="row align-items-center" style="min-height: 100vh">
+					<div class="container">
+
+						<div class="col-5 mx-auto text-center">
+							<div class="logo-box">
+								<img class="img-fluid" src="<?php the_field('modal_logo', 'option'); ?>" alt="logo">
+							</div>
+							<div class="title cl--white">
+								<?php the_field('modal_titulo', 'option'); ?>
+							</div>
+							<div class="action">
+								<button type="button" class="btn btn-modal" data-dismiss="modal">
+									<span>Si</span>
+									<span class="checking"></span>
+								</button>
+								<button id="js-modal-mensaje" type="button" class="btn btn-modal">
+									<span>no</span>
+									<span class="checking"></span>
+								</button>
+							</div>
+							<div id="js-mesaje" class="messaje d-none">
+								<?php the_field('modal_negative_mensaje', 'option'); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+<?php else : ?>
+	<?php // echo 'false'; ?>
+
+<?php endif; ?>
+<!-- ***MODAL END*** -->
+
+<?php if($exibirModal === true) : // Si nuestra variable de control "$exibirModal" es igual a TRUE activa nuestro modal y será visible a nuestro usuario. ?>
+	<script >
+		var $ = jQuery;
+		$(document).ready(function () {
+			$('#myModal').modal('show')
+		});
+	</script>
+  <?php endif; ?>
+<?php
 get_footer();
