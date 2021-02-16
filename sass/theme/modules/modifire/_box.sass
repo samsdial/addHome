@@ -21,6 +21,8 @@
 		justify-content: center
 		+MQ(L)
 			display: flex
+		@media (min-width: 1024px)
+			left: -173px
 		&-list
 			display: flex
 			align-items: center
@@ -49,14 +51,19 @@
 		background: $white
 		+MQ(L)
 			padding: $spacers5
+// Banner box
 .box
 	&-banner
-		min-height: 800px
+		min-height: 563px
 		&-info
 			padding: 0 $spacers5
 			+MQ(L)
 				padding-left: 15%
 				padding-right: 100px
+			@media (min-width: 1024px)
+				padding-left: 12%
+				padding-right: 5px
+
 			.title
 				h2,
 				h1
@@ -71,6 +78,8 @@
 			background: $white
 			+MQ(L)
 				padding: $spacers5
+			@media (min-width: 1024px)
+				padding: 1.5rem
 
 //BOX RESULT
 .box
@@ -83,6 +92,7 @@
 				font-size: $h1-font-size
 		.paragraf
 			text-align: justify
+			min-height: 170px
 			+MQMAX(SL)
 				text-align: center
 		.title
@@ -137,7 +147,7 @@
 						left: 5px !important
 					.slick-next:before,
 					.slick-prev:before
-						color: $white
+						color: $Primary
 
 			&-min
 				height: 350px
@@ -297,6 +307,8 @@
 			border-radius: $card-site-radius
 			.img-fluid
 				border-radius: $card-site-radius
+				max-height: 273px
+				margin: 0 auto
 //work
 .box-work
 	.title

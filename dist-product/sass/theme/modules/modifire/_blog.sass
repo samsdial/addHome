@@ -15,6 +15,7 @@
 		width: 100%
 		height: auto
 		margin-bottom: rem-calc(22px)
+// widget Search
 .widget_search
 	margin-bottom: rem-calc(22px)
 	form
@@ -33,6 +34,8 @@
 				display: inherit
 				right: 15px
 				color: $gray
+
+// widget
 .widget_recent_entries,
 .widget_archive,
 .widget_categories
@@ -41,6 +44,8 @@
 		text-transform: uppercase
 		padding: $spacers2 0
 		margin-bottom: $spacer
+
+// widget entries
 .widget_recent_entries
 	ul
 		li
@@ -56,6 +61,8 @@
 				.post-date
 					font-size: $text-tiny
 					color: $silver
+
+// Widger Archive
 .widget_archive
 	ul
 		li
@@ -109,7 +116,8 @@
 					position: absolute
 					top: 25%
 					right: 0
-
+// Entry
+// Footer
 .entry-footer
 	background: transparent
 	color: $SecondBold
@@ -117,6 +125,21 @@
 		color: $SecondBold
 		+press
 			color: $SecondBold
+// Content
+.entry-content
+	p, h2, h3, h4, h5, h6
+		margin-bottom: 1rem !important
+	h2
+		font-size: 1.4125rem
+	h3
+		font-size: 1.2125rem
+	h4
+		font-size: 1.1125rem
+	h5
+		font-size: 1.0125rem
+	h6
+		font-size: 1rem
+
 .list-shared
 	border: 1px solid $silver
 	border-radius: 0
@@ -169,7 +192,27 @@
 			.reply
 				padding-left: rem-calc(95px)
 
+//Blockquote
+	//wp
+blockquote
+	&.wp-block-quote
+		&::before
+			width: 3px
+			height: 100px
+			content: ""
+			display: inline-block
+			background: $white
+			vertical-aling: top
+			margin-right: 8px
+		p
+			display: inline-block
+			width: 98%
+			font-size: 1.2rem !important
+		cite
+			display: inline-block
 
+//Form
+	// Comment
 form.comment-form
 	textarea.form-control,
 	input.form-control

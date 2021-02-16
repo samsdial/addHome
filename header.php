@@ -29,14 +29,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<!-- ******************* The Navbar Area ******************* -->
 	<div id="wrapper-navbar">
 
-		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-
-		<nav id="main-nav" class="navbar navbar-expand-md navbar-site" aria-labelledby="main-nav-label">
-
+		<a class="skip-link sr-only sr-only-focusable" href="#content">
+			<?php esc_html_e( 'Skip to content', 'understrap' ); ?>
+		</a>
+		<nav id="main-nav" class="navbar navbar-expand-md navbar-site fixed-top bg-white" aria-labelledby="main-nav-label">
 			<h2 id="main-nav-label" class="sr-only">
 				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 			</h2>
-
 		<?php if ( 'container' === $container ) : ?>
 			<div class="container">
 		<?php endif; ?>

@@ -20,9 +20,7 @@ if ( is_front_page() ) {
 ?>
 <section class="w-100 banner bgc--primary box-shadow">
 	<!-- ***CONTAINER*** -->
-	<?php if ( get_field( 'one_item' ) == 1 ) : ?>
-		<?php // echo 'true'; ?>
-		<?php if( have_rows('banner') ): ?>
+	<?php if( have_rows('banner') ): ?>
 		<ul class="js-home-slider">
 		<?php while( have_rows('banner') ): the_row();?>
 			<li>
@@ -36,7 +34,7 @@ if ( is_front_page() ) {
 							<?php the_sub_field('title'); ?>
 							</h1>
 						</div>
-						<div class="paragraf mb-5 mr-lg-5 pr-lg-5">
+						<div class="paragraf mb-5">
 							<p>
 							<?php the_sub_field('text'); ?>
 							</p>
@@ -49,34 +47,8 @@ if ( is_front_page() ) {
 			</li>
 			<?php endwhile; ?>
 		</ul>
-		<?php endif; ?>
-	<?php else : ?>
-		<?php // echo 'false'; ?>
-		<?php if( have_rows('banner') ): ?>
-		<?php while( have_rows('banner') ): the_row();?>
-			<div class="box-banner d-lg-flex w-100 w-lg-70">
-				<figure  class="order-1 order-lg-2 w-100 w-lg-70">
-					<img src="<?php the_sub_field('image'); ?>" class="img-fluid w-100" alt="">
-				</figure>
-				<div class="order-2 order-lg-1 box-banner-info text-white align-self-center text-center text-lg-left w-100 w-lg-70 py-5 py-lg-0">
-					<div class="title mb-3">
-						<h1>
-						<?php the_sub_field('title'); ?>
-						</h1>
-					</div>
-					<div class="paragraf mb-5 mr-lg-5 pr-lg-5">
-						<p>
-						<?php the_sub_field('text'); ?>
-						</p>
-					</div>
-					<div class="action">
-						<a href="<?php the_sub_field('ulr_link'); ?>" class="btn btn_secondary"><?php the_sub_field('button_text'); ?></a>
-					</div>
-				</div>
-			</div>
-		<?php endwhile; ?>
-		<?php endif; ?>
 	<?php endif; ?>
+
 
 		<div class="box-social">
 			<ul class="box-social-list">

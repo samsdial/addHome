@@ -7886,7 +7886,10 @@ $(document).ready(function () {
     dots: true,
     arrows: false,
     fade: true,
-    cssEase: 'linear'
+    cssEase: 'linear',
+    autoplay: true,
+    autoplaySpeed: 20000,
+    infinite: true
   }); //js-slider-offer
 
   $('.js-slider-offer').slick({
